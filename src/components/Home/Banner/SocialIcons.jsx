@@ -10,15 +10,18 @@ import { Link } from "react-router-dom";
 const SocialIcons = () => {
   return (
     <>
-      <Link>
+      <Link to="https://www.facebook.com/shawonshafayet">
         <FaFacebookSquare></FaFacebookSquare>
       </Link>
-      <Link>
+
+      <Link to="https://www.linkedin.com/in/shafayethossain957/">
         <FaLinkedin></FaLinkedin>
       </Link>
+
       <Link>
         <FaWhatsappSquare></FaWhatsappSquare>
       </Link>
+
       <Link>
         <FaGithubSquare></FaGithubSquare>
       </Link>
