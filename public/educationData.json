@@ -6,7 +6,7 @@
     "startDate": "August 2023",
     "endDate": "Will be added soon",
     "CGPA": "Will be added soon",
-    "institutionImg": "../src/assets/Education/kth.png"
+    "institutionImg": "https://i.ibb.co/dLVnXHG/kth.png"
   },
   {
     "id": 2,
@@ -15,7 +15,7 @@
     "startDate": "August 2022",
     "endDate": "July 2023",
     "CGPA": "  4/4 (17/20)",
-    "institutionImg": "../src/assets/Education/Loraine-2.png"
+    "institutionImg": "https://i.ibb.co/fxyXk74/Loraine-2.png"
   },
   {
     "id": 3,
@@ -24,6 +24,6 @@
     "startDate": "2014",
     "endDate": "2018",
     "CGPA": "  3.56/4.00 (90%)",
-    "institutionImg": "../src/assets/Education/Nsu-2.png"
+    "institutionImg": "https://i.ibb.co/wW6Fn6B/Nsu-2.png"
   }
 ]
