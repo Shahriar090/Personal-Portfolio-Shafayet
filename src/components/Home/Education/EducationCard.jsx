@@ -9,10 +9,10 @@ const EducationCard = ({ singleData }) => {
         <img
           src={institutionImg}
           alt="Institution Image"
-          className="w-9/12 rounded-full"
+          className="w-full lg:w-9/12 lg:rounded-full rounded-lg"
         />
       </figure>
-      <div className="card-body ">
+      <div className="card-body text-center">
         <h1 className="card-title font-bold text-xl lg:text-2xl">
           {institution}
         </h1>

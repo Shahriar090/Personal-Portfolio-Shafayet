@@ -2,6 +2,7 @@ import React from "react";
 import bannerImg from "../../../assets/shafayet.jpg";
 
 import SocialIcons from "./SocialIcons";
+import { Link } from "react-router-dom";
 
 const Banner = () => {
   return (
@@ -26,9 +27,15 @@ const Banner = () => {
             power electronics, design and optimization of microgrids, energy
             storage and global energy market modelling.
           </p>
-          <button className="btn btn-sm btn-outline text-slate-300 ">
-            View Resume
-          </button>
+          <Link
+            to="https://drive.google.com/file/d/1JJlc6Btxrhn-WiQkim2jVOK6T8jmw0SB/view?usp=drive_link"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <button className="btn btn-sm btn-outline text-slate-300 hover:bg-white hover:text-black">
+              View Resume
+            </button>
+          </Link>
         </div>
         <div className="social absolute bottom-2 right-2 flex gap-3 text-lg lg:text-xl text-slate-300">
           <SocialIcons></SocialIcons>
