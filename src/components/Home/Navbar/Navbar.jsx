@@ -3,11 +3,22 @@ import { Link, NavLink } from "react-router-dom";
 import { IoIosSearch } from "react-icons/io";
 import NavSm from "./NavSm";
 import "./NavStyles/nav.css";
+import ActiveLink from "./ActiveLink/ActiveLink";
 
 const Navbar = () => {
+  const navOptions = (
+    <>
+      <li>
+        <ActiveLink to="/">Home</ActiveLink>
+      </li>
+      <li>
+        <ActiveLink to="/projects">Projects</ActiveLink>
+      </li>
+    </>
+  );
   return (
     <nav className="relative">
-      <div className="nav-large hidden lg:block w-full max-w-screen-xl mx-auto h-auto p-4 bg-gray-300 fixed top-0 left-0 right-0 z-50">
+      <div className="nav-large hidden lg:block w-full  h-auto p-4 text-slate-200 bg-[#130f40] fixed top-0 left-0 right-0 z-50">
         <div className="nav-contents flex justify-between px-4">
           <div className="logo">
             <Link className="text-xl">My Portfolio</Link>
@@ -16,27 +27,14 @@ const Navbar = () => {
             <input
               type="text"
               placeholder="Search Here..."
-              className="input input-bordered w-full border-2 border-gray-300 rounded-lg px-9 h-9"
+              className="input input-bordered w-full border-2 border-gray-300 rounded-full px-9 h-9 text-black"
             />
             <div className="nav-search-icon absolute top-2 left-4">
-              <IoIosSearch className="text-lg text-slate-500"></IoIosSearch>
+              <IoIosSearch className="text-lg text-black"></IoIosSearch>
             </div>
           </div>
           <div className="nav-options">
-            <ul className="flex gap-5 text-lg">
-              <li>
-                <NavLink className="active">Home</NavLink>
-              </li>
-              <li>
-                <NavLink>Projects</NavLink>
-              </li>
-              <li>
-                <NavLink>Portfolio</NavLink>
-              </li>
-              <li>
-                <NavLink>Contact</NavLink>
-              </li>
-            </ul>
+            <ul className="flex gap-5 text-lg">{navOptions}</ul>
           </div>
         </div>
       </div>

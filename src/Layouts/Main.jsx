@@ -4,7 +4,7 @@ import Navbar from "../components/Home/Navbar/Navbar";
 import "./main.css";
 const Main = () => {
   return (
-    <div className="max-w-screen-xl mx-auto px-6 lg:px-0">
+    <div className="">
       <Navbar></Navbar>
       <Outlet></Outlet>
     </div>
