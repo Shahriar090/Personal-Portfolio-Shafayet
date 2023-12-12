@@ -1,12 +1,6 @@
 import React from "react";
 import bannerImg from "../../../assets/shafayet.jpg";
-import {
-  FaFacebookSquare,
-  FaGithubSquare,
-  FaLinkedin,
-  FaWhatsappSquare,
-} from "react-icons/fa";
-import { Link } from "react-router-dom";
+
 import SocialIcons from "./SocialIcons";
 
 const Banner = () => {

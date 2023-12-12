@@ -1,5 +1,5 @@
 import React from "react";
-import { Link, NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { IoIosSearch } from "react-icons/io";
 import NavSm from "./NavSm";
 import "./NavStyles/nav.css";

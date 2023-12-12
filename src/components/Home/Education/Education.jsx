@@ -1,13 +1,12 @@
 import React, { useEffect, useState } from "react";
 
-import RelevantCourse from "./RelevantCourse/RelevantCourse";
 import EducationCard from "./EducationCard";
 import SectionTitle from "../../../SectionTitle/SectionTitle";
 
 const Education = () => {
   const [eduDatas, setEduDatas] = useState([]);
   useEffect(() => {
-    fetch("/public/educationData.json")
+    fetch("educationData.json")
       .then((res) => res.json())
       .then((data) => setEduDatas(data));
   }, []);
