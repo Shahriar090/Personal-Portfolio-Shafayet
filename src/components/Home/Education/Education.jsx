@@ -17,7 +17,7 @@ const Education = () => {
       </section>
 
       <section className="educational-detail">
-        <div className="education-data grid grid-cols-1 lg:grid-cols-3 gap-3 lg:gap-0">
+        <div className="education-data grid grid-cols-1 lg:grid-cols-3 gap-3 lg:gap-0  px-5 lg:px-0">
           {eduDatas.map((singleData) => (
             <EducationCard
               key={singleData.id}
@@ -25,11 +25,6 @@ const Education = () => {
             ></EducationCard>
           ))}
         </div>
-      </section>
-
-      <section className="py-10 lg:py-20">
-        <SectionTitle heading={"Relevant Course Works"}></SectionTitle>
-        <div className="courses">{/* <RelevantCourse></RelevantCourse> */}</div>
       </section>
     </div>
   );

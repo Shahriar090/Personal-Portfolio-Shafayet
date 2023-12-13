@@ -1,0 +1,60 @@
+[
+  {
+    "id": 1,
+    "post": "Junior Product Engineer",
+    "organization": "ME SOLshare ltd.",
+    "organizationImg": "https://i.ibb.co/30tZ3bG/solshare.png",
+    "location": "Dhaka,Bangladesh",
+    "startDate": "Aug 2020",
+    "endDate": "July 2021",
+    "responsibilities": [
+      {
+        "text": "Performing regular node testing of the hardware and firmware of Solbox (a digitized energy meter for PV microgrids)."
+      },
+      {
+        "text": "Troubleshooting & updating firmware of solboxes of the microgrid customers through using AWS IoT core (OTA)."
+      },
+      {
+        "text": "Performing regular stability testing of a 5 kW grid-connected systems along with lead acid batteries."
+      },
+      {
+        "text": "Preparing necessary electrical drawing and circuit analysis for product development."
+      },
+      {
+        "text": "Meeting with manufacturers for component selection and purchasing for Solbox"
+      }
+    ]
+  },
+
+  {
+    "id": 2,
+    "post": "Lecturer",
+    "organization": "Department of Electrical & Electronic Engineering,University of Scholars",
+    "organizationImg": "https://i.ibb.co/z5Ht6jw/university-of-scholars.png",
+    "location": "Dhaka,Bangladesh",
+    "startDate": "October 2021",
+    "endDate": "July 2022",
+    "courses": "Power System Analysis, Power System Protections and Switchgear, Electrical Machines, MATLAB",
+    "responsibilities": [
+      {
+        "text": "Performing regular theory & lab sessions of undergraduate students."
+      },
+      { "text": "Preparing course contents for Learning Management System." },
+      { "text": "Supervising capstone student projects & research activities" }
+    ]
+  },
+  {
+    "id": 3,
+    "post": "Part-Time Lab Officer",
+    "organization": "Department of Electrical & Computer Engineering, North South University",
+    "organizationImg": "https://i.ibb.co/wW6Fn6B/Nsu-2.png",
+    "location": "Dhaka,Bangladesh",
+    "startDate": "Jan 2020",
+    "endDate": " July 2022",
+    "courses": "Power Systems, Power Electronics, DC Circuit, Signals Systems",
+    "responsibilities": [
+      { "text": "Demonstrating lab experiments for undergraduate students." },
+      { "text": "Preparing lab manuals, exam scripts, and proctoring." }
+    ]
+  }
+]
