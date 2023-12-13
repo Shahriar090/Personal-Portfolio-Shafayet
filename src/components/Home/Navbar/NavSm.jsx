@@ -35,13 +35,13 @@ const NavSm = () => {
                 <RiMenuLine className="text-3xl text-white"></RiMenuLine>
               </label>
             </div>
-            <div className="drawer-side">
+            <div className="drawer-side ">
               <label
                 htmlFor="my-drawer"
                 aria-label="close sidebar"
                 className="drawer-overlay"
               ></label>
-              <ul className="menu p-4 w-60 min-h-full bg-base-200 text-base-content text-2xl">
+              <ul className="menu p-4 w-60 min-h-full bg-[#192a56] text-slate-200 text-2xl">
                 {/* Sidebar content here */}
                 {navOptions}
               </ul>

@@ -13,7 +13,7 @@ const RenderExperience = ({ experience }) => {
   } = experience;
 
   return (
-    <div className="card card-side w-full  bg-[#192a56] text-slate-200 shadow-lg mt-5  flex flex-col md:flex-row lg:flex-row ">
+    <div className="card card-side w-full mx-auto  bg-[#192a56] text-slate-200 shadow-lg mt-5  flex flex-col md:flex-row lg:flex-row ">
       <figure className="w-full md:w-3/6 lg:w-3/6">
         <img
           src={organizationImg}
@@ -28,7 +28,7 @@ const RenderExperience = ({ experience }) => {
         <h2 className="font-semibold text-md lg:text-lg">
           Organization : {organization}
         </h2>
-        <div className="sub-container text-md lg:text-lg">
+        <div className="sub-container text-md lg:text-lg flex flex-col gap-3">
           <h3>Job Location : {location}</h3>
 
           <h3>Start Date : {startDate}</h3>
