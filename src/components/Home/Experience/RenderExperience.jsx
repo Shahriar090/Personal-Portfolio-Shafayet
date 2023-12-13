@@ -13,12 +13,12 @@ const RenderExperience = ({ experience }) => {
   } = experience;
 
   return (
-    <div className="card card-side w-full  bg-[#192a56] text-slate-200 shadow-lg mt-5  flex flex-col lg:flex-row ">
+    <div className="card card-side w-full  bg-[#192a56] text-slate-200 shadow-lg mt-5  flex flex-col md:flex-row lg:flex-row ">
       <figure className="w-full md:w-3/6 lg:w-3/6">
         <img
           src={organizationImg}
           alt="Image"
-          className="w-full md:w-3/6 lg:w-3/6"
+          className="w-3/4 md:w-3/6 lg:w-3/6"
         />
       </figure>
       <div className="card-body w-full md:w-3/6 lg:w-3/6">
