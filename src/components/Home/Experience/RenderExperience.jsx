@@ -13,7 +13,7 @@ const RenderExperience = ({ experience }) => {
   } = experience;
 
   return (
-    <div className="card card-side w-full mx-auto  bg-[#192a56] text-slate-200 shadow-lg mt-5  flex flex-col md:flex-row lg:flex-row ">
+    <div className="card card-side w-full mx-auto  bg-[#0c2461] text-slate-200 shadow-xl mt-5  flex flex-col md:flex-row lg:flex-row ">
       <figure className="w-full md:w-3/6 lg:w-3/6">
         <img
           src={organizationImg}
@@ -35,7 +35,7 @@ const RenderExperience = ({ experience }) => {
           <h3>End Date : {endDate}</h3>
         </div>
         {/* responsibilities */}
-        <div className="collapse bg-[#13234c]">
+        <div className="collapse bg-[#0a1e4f]">
           <input type="checkbox" />
           <div className="collapse-title text-md md:text-xl lg:text-xl font-md">
             View Responsibilities

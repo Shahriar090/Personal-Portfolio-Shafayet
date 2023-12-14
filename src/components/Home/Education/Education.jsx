@@ -11,7 +11,7 @@ const Education = () => {
       .then((data) => setEduDatas(data));
   }, []);
   return (
-    <div className="bg-[#142757] text-slate-200 px-8 md:px-8 lg:px-20">
+    <div className="bg-[#0c2461] text-slate-200 px-8 md:px-8 lg:px-20">
       <section className="py-10 lg:py-20">
         <SectionTitle heading={"Education"}></SectionTitle>
       </section>
