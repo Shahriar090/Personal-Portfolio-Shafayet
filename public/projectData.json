@@ -1,0 +1,33 @@
+{
+  "projects": [
+    {
+      "id": 1,
+      "title": "Energy Management & Control of DC Microgrid",
+      "year": 2022,
+      "description": "Designing a power and energy control algorithm based on differential flatness theory to regulate the DC bus voltage in the microgrid. Implementing d-q axis controller of the 3-phase inverter for reactive power compensation.",
+      "tools": ["MATLAB", "SIMULINK"]
+    },
+    {
+      "id": 2,
+      "title": "Sizing & Simulation of a Voltage-Controlled DC-DC Boost Converter",
+      "year": 2022,
+      "description": "Performing average modeling in continuous conduction mode. Performing matrix-based linearization and finding transfer function & equilibrium. Tuning the small signal control and verification of numerical simulation.",
+      "tools": ["MATLAB", "SIMULINK"]
+    },
+    {
+      "id": 3,
+      "title": "Power Architecture of Heavy-Duty Hybrid Fuel Cell Trucks",
+      "year": 2022,
+      "description": "Reviewing different power architectures of fuel trucks. Selecting the best topology of inverter DC-DC converter for the power architecture. Researching component market proposing models of fuel cell, 3-phase motor, supercapacitor, battery, inverter.",
+      "tools": ["MATLAB", "SIMULINK"]
+    },
+    {
+      "id": 4,
+      "title": "Renewable Energy Supply to University of Lorraine",
+      "year": 2022,
+      "description": "Designing a grid-connected PV system to increase self-consumption of UL. Sizing of PV panels, energy storage based on LCOE, ROI & loss of load probability.",
+      "tools": ["HOMER", "PVsyst", "SketchUp", "PVGIS"],
+      "companyAffiliation": ["John Cockerill", "University of Lorraine"]
+    }
+  ]
+}
