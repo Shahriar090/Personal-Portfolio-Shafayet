@@ -50,7 +50,7 @@ const Contact = () => {
               />
             </picture>
 
-            <div className="texts pt-5 flex flex-col  gap-4  text-lg md:text-2xl lg:text-2xl">
+            <div className="texts pt-5 flex flex-col  gap-4  text-sm md:text-2xl lg:text-2xl">
               <h1 className="flex gap-3 items-center">
                 <GoPerson></GoPerson>Mohammad Shafayet Hossain
               </h1>

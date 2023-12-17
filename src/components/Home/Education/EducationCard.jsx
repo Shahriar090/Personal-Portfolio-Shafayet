@@ -1,15 +1,31 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const EducationCard = ({ singleData }) => {
-  const { institution, degree, startDate, endDate, CGPA, institutionImg } =
-    singleData;
+  const {
+    institution,
+    degree,
+    startDate,
+    endDate,
+    CGPA,
+    institutionImg,
+    viewDetails,
+    viewInstitution,
+  } = singleData;
   return (
     <div className="card w-full  mx-auto bg-[#0c2461] text-slate-200 shadow-xl">
       <div className="card-body flex flex-col gap-3">
-        <h1 className="card-title font-bold text-xl lg:text-2xl">
-          {institution}
-        </h1>
-        <h2 className="font-semibold text-md lg:text-lg">Degree : {degree}</h2>
+        <Link to={viewInstitution}>
+          {" "}
+          <h1 className="card-title font-bold text-xl lg:text-2xl">
+            {institution}
+          </h1>
+        </Link>
+        <Link to={viewDetails}>
+          <h2 className="font-semibold text-md lg:text-lg">
+            Degree : {degree}
+          </h2>
+        </Link>
         <h3 className="text-md lg:text-lg">Start Date : {startDate}</h3>
         <h3 className="text-md lg:text-lg">End Date : {endDate}</h3>
         <p className="text-md lg:text-lg">Total CGPA : {CGPA}</p>

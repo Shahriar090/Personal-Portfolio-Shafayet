@@ -2,28 +2,34 @@
   {
     "id": 1,
     "institution": "KTH Royal Institute of Technology, Sweden",
-    "degree": "MS in Global Energy Market Optimization",
+    "viewInstitution": "https://www.kth.se/en",
+    "degree": "Erasmus Mundus Joint Master's degree in Decentralised Smart Energy Systems",
     "startDate": "August 2023",
     "endDate": "Will be added soon",
     "CGPA": "Will be added soon",
-    "institutionImg": "https://i.ibb.co/dLVnXHG/kth.png"
+    "institutionImg": "https://i.ibb.co/dLVnXHG/kth.png",
+    "viewDetails": "https://densys.univ-lorraine.fr/?fbclid=IwAR3PULZVglzxwGsFAob_gcTpqFp5uFwNP9dV1gTGWdBy1K6S9ObK51t4bDE"
   },
   {
     "id": 2,
     "institution": "University of Lorraine, France",
-    "degree": "MS in Decentralised Smart Energy Systems",
+    "viewInstitution": "https://www.univ-lorraine.fr/en/univ-lorraine/",
+    "degree": "Erasmus Mundus Joint Master's degree in Decentralised Smart Energy Systems",
     "startDate": "August 2022",
     "endDate": "July 2023",
     "CGPA": "  4/4 (17/20)",
-    "institutionImg": "https://i.ibb.co/fxyXk74/Loraine-2.png"
+    "institutionImg": "https://i.ibb.co/fxyXk74/Loraine-2.png",
+    "viewDetails": "https://densys.univ-lorraine.fr/?fbclid=IwAR3PULZVglzxwGsFAob_gcTpqFp5uFwNP9dV1gTGWdBy1K6S9ObK51t4bDE"
   },
   {
     "id": 3,
     "institution": "North South University, Bangladesh",
-    "degree": "BS in Electrical and Electronic Engineering",
+    "viewInstitution": "http://www.northsouth.edu/",
+    "degree": "Bachelor of Science in Electrical and Electronic Engineering",
     "startDate": "2014",
     "endDate": "2018",
     "CGPA": "  3.56/4.00 (90%)",
-    "institutionImg": "https://i.ibb.co/wW6Fn6B/Nsu-2.png"
+    "institutionImg": "https://i.ibb.co/wW6Fn6B/Nsu-2.png",
+    "viewDetails": "http://ece.northsouth.edu/undergraduate/academics/programs/bs-eee/"
   }
 ]

@@ -18,7 +18,7 @@ const Skills = () => {
       <section>
         {Object.keys(skills).map((category) => (
           <div key={category} className="category-container">
-            <h2 className="text-xl md:text-2xl lg:text-3xl font-semibold py-12 text-center underline uppercase ">
+            <h2 className="text-xl md:text-2xl lg:text-3xl font-semibold py-10 text-center underline uppercase ">
               {category}
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4">
