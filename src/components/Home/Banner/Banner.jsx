@@ -18,22 +18,22 @@ const Banner = () => {
             Hello, I am Mohammad Shafayet Hossain
           </h1>
           <p className="py-5 text-lg md:text-xl lg:text-xl">
-            Eramsus Mundus Master’s graduate possessing high enthusiasm in
-            renewable energy with strong background in modern power systems,
+            I am an Eramsus Mundus Master’s graduate possessing high enthusiasm
+            in renewable energy with strong background in modern power systems,
             power electronics, design and optimization of microgrids, energy
             storage and global energy market modelling.
           </p>
-          <Link
-            to="https://drive.google.com/file/d/1JJlc6Btxrhn-WiQkim2jVOK6T8jmw0SB/view?usp=drive_link"
+          <a
+            href="https://drive.google.com/file/d/1JJlc6Btxrhn-WiQkim2jVOK6T8jmw0SB/view?usp=sharing"
             target="_blank"
             rel="noopener noreferrer"
           >
             <button className="btn btn-sm btn-outline text-slate-300 hover:bg-white hover:text-black">
               View Resume
             </button>
-          </Link>
+          </a>
         </div>
-        <div className="social absolute bottom-2 right-2 flex gap-3 text-lg lg:text-xl text-slate-300">
+        <div className="social absolute bottom-2 right-2 flex gap-2  text-lg lg:text-2xl text-slate-300">
           <SocialIcons></SocialIcons>
         </div>
       </div>
