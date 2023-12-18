@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 
 import EducationCard from "./EducationCard";
 import SectionTitle from "../../../SectionTitle/SectionTitle";
+import SocialIcons from "../Banner/SocialIcons";
 
 const Education = () => {
   const [eduDatas, setEduDatas] = useState([]);
@@ -11,7 +12,7 @@ const Education = () => {
       .then((data) => setEduDatas(data));
   }, []);
   return (
-    <div className="bg-[rgb(17,17,34)] text-slate-200 px-8 md:px-8 lg:px-20">
+    <div className="education-container w-full h-auto bg-[rgb(17,17,34)] text-slate-200 px-8 md:px-8 lg:px-20">
       <section className="py-10 lg:py-20">
         <SectionTitle heading={"Education"}></SectionTitle>
       </section>

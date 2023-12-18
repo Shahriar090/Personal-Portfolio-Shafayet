@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 
 const Banner = () => {
   return (
-    <div className="hero relative  w-full h-auto bg-[rgb(17,17,34)] px-8 md:px-8 lg:px-20">
+    <div className="hero relative w-full h-auto bg-[rgb(17,17,34)] px-8 md:px-8 lg:px-20">
       <div className="hero-items w-full flex flex-col lg:flex-row gap-5 md:gap-6 lg:gap-8  items-center justify-center">
         <div className="hero-image w-full">
           <picture>
@@ -37,7 +37,7 @@ const Banner = () => {
         </div>
       </div>
       {/* social links */}
-      <div className="social-links absolute bottom-2 right-2 flex flex-col gap-2 lg:gap-3 text-lg lg:text-2xl text-slate-300">
+      <div className="social-links absolute bottom-0 right-1 flex flex-col md:flex-row lg:flex-row gap-3 text-lg lg:text-2xl text-slate-300">
         <SocialIcons></SocialIcons>
       </div>
     </div>
