@@ -6,7 +6,7 @@ import { router } from "./Routes/Routes.jsx";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <div className="pt-16">
+    <div className="pt-12">
       <RouterProvider router={router} />
     </div>
   </React.StrictMode>

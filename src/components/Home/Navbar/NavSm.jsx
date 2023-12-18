@@ -14,9 +14,7 @@ const NavSm = () => {
       <li>
         <ActiveLink to="/projects">Projects</ActiveLink>
       </li>
-      <li>
-        <Link>Portfolio</Link>
-      </li>
+
       <li>
         <ActiveLink to="/contact">Contact</ActiveLink>
       </li>
@@ -24,7 +22,7 @@ const NavSm = () => {
   );
   return (
     <nav className="relative">
-      <div className="navbar-small w-full h-auto fixed top-0 right-0 left-0 z-50 lg:hidden text-slate-200 bg-[#0c2461]  px-4 py-2">
+      <div className="navbar-small w-full h-auto fixed top-0 right-0 left-0 z-50 lg:hidden text-slate-200 bg-[rgb(17,17,34)]  px-4 py-2">
         <div className="nav-contents flex gap-14 justify-center items-center">
           <div className="drawer z-50 w-3/12 ">
             <input id="my-drawer" type="checkbox" className="drawer-toggle" />
@@ -43,7 +41,10 @@ const NavSm = () => {
                 aria-label="close sidebar"
                 className="drawer-overlay"
               ></label>
-              <ul className="menu p-4 w-60 min-h-full bg-[#0c2461] text-slate-200 text-2xl">
+              <ul
+                id="nav-options-container"
+                className="flex flex-col gap-3 p-6 w-44 min-h-full bg-[rgb(17,17,34)] text-slate-200 text-2xl "
+              >
                 {/* Sidebar content here */}
                 {navOptions}
               </ul>
@@ -53,7 +54,7 @@ const NavSm = () => {
             <Link className="text-xl font-bold">Shafayet Hossain</Link>
           </div>
         </div>
-        <div className="search w-full mx-auto py-1 relative">
+        {/* <div className="search w-full mx-auto py-1 relative">
           <input
             type="text"
             placeholder="Search Here..."
@@ -62,7 +63,7 @@ const NavSm = () => {
           <div className="nav-search-icon absolute top-3 left-4">
             <IoIosSearch className="text-lg text-slate-500"></IoIosSearch>
           </div>
-        </div>
+        </div> */}
       </div>
     </nav>
   );

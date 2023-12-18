@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const RenderExperience = ({ experience }) => {
   const {
@@ -10,17 +11,24 @@ const RenderExperience = ({ experience }) => {
     endDate,
     courses,
     responsibilities,
+    organizationDetails,
   } = experience;
 
   return (
-    <div className="card card-side w-full mx-auto  bg-[#0c2461] text-slate-200 shadow-xl mt-5  flex flex-col md:flex-row lg:flex-row ">
-      <figure className="w-full md:w-3/6 lg:w-3/6">
-        <img
-          src={organizationImg}
-          alt="Image"
-          className="w-3/4 md:w-3/6 lg:w-3/6"
-        />
-      </figure>
+    <div className="card card-side w-full mx-auto  bg-[rgb(17,17,34)] text-slate-200 shadow-xl  mt-5  flex flex-col md:flex-row lg:flex-row ">
+      <Link
+        className="w-full md:w-3/6 lg:w-2/5 my-auto"
+        to={organizationDetails}
+      >
+        <picture>
+          <img
+            src={organizationImg}
+            alt="Image"
+            className="w-3/4 md:w-3/6 lg:w-3/6 bg-white opacity-90 rounded-lg mx-auto"
+          />
+        </picture>
+      </Link>
+
       <div className="card-body w-full md:w-3/6 lg:w-3/6">
         <h1 className="card-title font-bold text-xl lg:text-2xl">
           Designation : {post}
@@ -35,7 +43,7 @@ const RenderExperience = ({ experience }) => {
           <h3>End Date : {endDate}</h3>
         </div>
         {/* responsibilities */}
-        <div className="collapse bg-[#0a1e4f]">
+        <div className="collapse bg-[rgb(27,27,55)]">
           <input type="checkbox" />
           <div className="collapse-title text-md md:text-xl lg:text-xl font-md">
             View Responsibilities

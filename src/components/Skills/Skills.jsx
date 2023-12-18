@@ -10,7 +10,7 @@ const Skills = () => {
       .then((data) => setSkills(data));
   }, []);
   return (
-    <div className="bg-[#0c2461] text-slate-200 px-8 md:px-8 lg:px-20">
+    <div className="bg-[rgb(17,17,34)] text-slate-200 px-8 md:px-8 lg:px-20">
       <section className="py-10 lg:py-20">
         <SectionTitle heading={"Skills"}></SectionTitle>
       </section>

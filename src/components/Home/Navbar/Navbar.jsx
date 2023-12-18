@@ -22,23 +22,19 @@ const Navbar = () => {
   );
   return (
     <nav className="relative">
-      <div className="nav-large hidden lg:block w-full  h-auto p-4 text-slate-200 bg-[#0c2461] fixed top-0 left-0 right-0 z-50 shadow-md">
-        <div className="nav-contents flex justify-between px-4">
-          <div className="logo">
-            <Link className="text-xl">Shafayet Hossain</Link>
+      <div className="nav-large hidden lg:block w-full  h-auto px-20 py-3 text-slate-200 bg-[rgb(17,17,34)] fixed top-0 left-0 right-0 z-50 shadow-lg">
+        <div className="nav-contents flex items-center justify-between">
+          <div className="logo ">
+            <Link className="text-2xl">Shafayet Hossain</Link>
           </div>
-          <div className="search w-80 relative">
-            <input
-              type="text"
-              placeholder="Search Here..."
-              className="input input-bordered w-full border-2 border-gray-300 rounded-full px-9 h-9 text-black"
-            />
-            <div className="nav-search-icon absolute top-2 left-4">
-              <IoIosSearch className="text-lg text-black"></IoIosSearch>
-            </div>
-          </div>
-          <div className="nav-options">
-            <ul className="flex gap-5 text-lg">{navOptions}</ul>
+
+          <div id="nav-options" className="nav-options ">
+            <ul
+              id="nav-options-container"
+              className="flex gap-4 text-xl text-slate-200"
+            >
+              {navOptions}
+            </ul>
           </div>
         </div>
       </div>
@@ -50,3 +46,14 @@ const Navbar = () => {
 };
 
 export default Navbar;
+
+/* <div className="search navbar-center  relative">
+            <input
+              type="text"
+              placeholder="Search Here..."
+              className="input input-bordered w-full input-primary border-gray-300 rounded-full px-11 h-9 text-black"
+            />
+            <div className="nav-search-icon absolute left-4 top-2">
+              <IoIosSearch className="text-xl text-black"></IoIosSearch>
+            </div>
+          </div> */

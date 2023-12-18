@@ -34,7 +34,7 @@ const Contact = () => {
 
   //   return div start
   return (
-    <div className="section-container w-full h-auto min-h-screen bg-[#0c2461] text-slate-200 pt-14 px-8 md:px-8 lg:px-20">
+    <div className="section-container w-full h-auto min-h-screen bg-[#111122] text-slate-200 pt-14 px-8 md:px-8 lg:px-20">
       <section>
         <SectionTitle heading={"Let's Talk"}></SectionTitle>
       </section>
@@ -108,7 +108,7 @@ const Contact = () => {
               <input
                 type="submit"
                 value="Sent"
-                className="btn btn-outline text-slate-200 w-3/6  mx-auto hover:bg-slate-200 hover:text-slate-900 mt-2"
+                className="btn btn-outline text-slate-300 hover:bg-[#F8B90C] w-3/6  mx-auto   mt-2"
               />
             </form>
           </div>
