@@ -13,22 +13,24 @@ const EducationCard = ({ singleData }) => {
     viewInstitution,
   } = singleData;
   return (
-    <div className="card w-full  mx-auto bg-[rgb(17,17,34)] text-slate-200 shadow-2xl">
+    <div className="card w-full mx-auto bg-[rgb(17,17,34)] text-slate-300 shadow-2xl transform transition-transform hover:scale-105 duration-300">
       <div className="card-body gap-3">
         <Link to={viewInstitution}>
           {" "}
-          <h1 className="card-title font-bold text-xl lg:text-2xl">
+          <h1 className="card-title font-bold text-lg md:text-xl  lg:text-xl">
             {institution}
           </h1>
         </Link>
         <Link to={viewDetails}>
-          <h2 className="font-semibold text-md lg:text-lg">
+          <h2 className="font-semibold text-md md:text-lg lg:text-lg">
             Degree : {degree}
           </h2>
         </Link>
-        <h3 className="text-md lg:text-lg">Start Date : {startDate}</h3>
-        <h3 className="text-md lg:text-lg">End Date : {endDate}</h3>
-        <p className="text-md lg:text-lg">Total CGPA : {CGPA}</p>
+        <h3 className="text-md md:text-md lg:text-lg">
+          Start Date : {startDate}
+        </h3>
+        <h3 className="text-md md:text-md lg:text-lg">End Date : {endDate}</h3>
+        <p className="text-md md:text-md lg:text-lg">Total CGPA : {CGPA}</p>
 
         <picture>
           <img

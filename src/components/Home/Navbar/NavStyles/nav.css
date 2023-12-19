@@ -6,9 +6,9 @@
 
 #nav-options-container li a {
   display: block;
-  padding: 4px 8px;
+  padding: 5px 8px;
   text-align: center;
-  border-radius: 5%;
+  border-radius: 8px;
   transition: 0.3s;
 }
 #nav-options-container li a:hover {

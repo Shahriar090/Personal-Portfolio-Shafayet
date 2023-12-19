@@ -46,7 +46,7 @@ const RenderExperience = ({ experience }) => {
         <div className="collapse bg-[rgb(27,27,55)]">
           <input type="checkbox" />
           <div className="collapse-title text-md md:text-xl lg:text-xl font-md">
-            View Responsibilities
+            See Responsibilities
           </div>
           <div className="collapse-content text-md md:text-lg lg:text-lg ">
             <ul className="px-5">
@@ -57,7 +57,7 @@ const RenderExperience = ({ experience }) => {
               ))}
             </ul>
 
-            <h1 className="pt-2 px-5 text-md md:text-lg lg:text-lg">
+            <h1 className="pt-2  text-md md:text-lg lg:text-lg">
               <span className="font-semibold">Courses</span> :{" "}
               {courses ? courses : "Not Available"}
             </h1>

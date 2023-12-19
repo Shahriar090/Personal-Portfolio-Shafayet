@@ -6,6 +6,8 @@ import { FaPhoneVolume } from "react-icons/fa6";
 import { GoPerson } from "react-icons/go";
 import emailjs from "@emailjs/browser";
 import React, { useRef } from "react";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const Contact = () => {
   // form ref
@@ -14,6 +16,18 @@ const Contact = () => {
   // send email function
   const sendEmail = (e) => {
     e.preventDefault();
+
+    // Checking if required fields are empty
+    const { from_name, from_email, from_subject, message } =
+      form.current.elements;
+    if (
+      (!from_name.value || !from_email.value,
+      !from_subject.value,
+      !message.value)
+    ) {
+      toast.warning("Please Fill In All Required Fields.");
+      return;
+    }
 
     emailjs
       .sendForm(
@@ -25,9 +39,12 @@ const Contact = () => {
       .then(
         (result) => {
           console.log(result.text);
+          toast.success("Message Sent Successfully");
+          form.current.reset();
         },
         (error) => {
           console.log(error.text);
+          toast.error("Error Sending Message, Please Try Again");
         }
       );
   };
@@ -35,9 +52,11 @@ const Contact = () => {
   //   return div start
   return (
     <div className="section-container w-full h-auto min-h-screen bg-[#111122] text-slate-200 pt-14 px-8 md:px-8 lg:px-20">
+      <ToastContainer position="top-center" />
       <section>
         <SectionTitle heading={"Let's Talk"}></SectionTitle>
       </section>
+      {/* main content */}
       <section className="main-content">
         <div className="parent-div flex flex-col md:flex-row lg:flex-row gap-5 pt-14 pb-10">
           {/* contact section image, address related topic */}
@@ -74,7 +93,7 @@ const Contact = () => {
               onSubmit={sendEmail}
               className="flex flex-col gap-5"
             >
-              <span className="block">Your Name</span>
+              <span className="block">Your Name *</span>
               <input
                 type="text"
                 placeholder="Your Name"
@@ -82,7 +101,7 @@ const Contact = () => {
                 className="input input-bordered w-full  bg-slate-200 text-black"
               />
               {/* email */}
-              <span className="block">Your Email</span>
+              <span className="block">Your Email *</span>
               <input
                 type="Your Email"
                 placeholder="Your Email"
@@ -90,7 +109,7 @@ const Contact = () => {
                 className="input input-bordered w-full  bg-slate-200 text-black"
               />
               {/* subject */}
-              <span className="block">Subject</span>
+              <span className="block">Subject *</span>
               <input
                 type="text"
                 placeholder="Your Subject"
@@ -98,7 +117,7 @@ const Contact = () => {
                 className="input input-bordered w-full  bg-slate-200 text-black"
               />
               {/* message */}
-              <span className="block">Message</span>
+              <span className="block">Message *</span>
               <textarea
                 className="textarea textarea-bordered textarea-lg w-full  bg-slate-200 text-black"
                 placeholder="Your Message"

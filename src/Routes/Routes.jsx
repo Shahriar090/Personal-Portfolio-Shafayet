@@ -3,6 +3,7 @@ import Main from "../Layouts/Main";
 import Home from "../components/Home/Home/Home";
 import Projects from "../components/Projects/Projects";
 import Contact from "../components/Contact/Contact";
+import AcademicAchievements from "../components/AcademicAchievements/AcademicAchievements";
 
 export const router = createBrowserRouter([
   {
@@ -20,6 +21,10 @@ export const router = createBrowserRouter([
       {
         path: "/projects",
         element: <Projects></Projects>,
+      },
+      {
+        path: "/achievements",
+        element: <AcademicAchievements></AcademicAchievements>,
       },
     ],
   },

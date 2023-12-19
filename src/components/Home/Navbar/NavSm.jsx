@@ -14,7 +14,9 @@ const NavSm = () => {
       <li>
         <ActiveLink to="/projects">Projects</ActiveLink>
       </li>
-
+      <li>
+        <ActiveLink to="/achievements">Academic Achievements</ActiveLink>
+      </li>
       <li>
         <ActiveLink to="/contact">Contact</ActiveLink>
       </li>
@@ -22,7 +24,7 @@ const NavSm = () => {
   );
   return (
     <nav className="relative">
-      <div className="navbar-small w-full h-auto fixed top-0 right-0 left-0 z-50 lg:hidden text-slate-200 bg-[rgb(17,17,34)]  px-4 py-2">
+      <div className="navbar-small w-full h-auto fixed top-0 right-0 left-0 z-50 lg:hidden text-slate-300 bg-[rgb(17,17,34)]  px-4 py-2">
         <div className="nav-contents flex gap-14 justify-center items-center">
           <div className="drawer z-50 w-3/12 ">
             <input id="my-drawer" type="checkbox" className="drawer-toggle" />
@@ -32,7 +34,7 @@ const NavSm = () => {
                 htmlFor="my-drawer"
                 className="btn btn-outline border-0 drawer-button"
               >
-                <RiMenuLine className="text-3xl text-white"></RiMenuLine>
+                <RiMenuLine className="text-3xl text-slate-300"></RiMenuLine>
               </label>
             </div>
             <div className="drawer-side ">
@@ -41,11 +43,8 @@ const NavSm = () => {
                 aria-label="close sidebar"
                 className="drawer-overlay"
               ></label>
-              <ul
-                id="nav-options-container"
-                className="flex flex-col gap-3 p-6 w-44 min-h-full bg-[rgb(17,17,34)] text-slate-200 text-2xl "
-              >
-                {/* Sidebar content here */}
+              <ul className="flex flex-col gap-3 p-6  w-60 min-h-full bg-[rgb(17,17,34)] text-slate-300 text-lg uppercase">
+                {/* content here */}
                 {navOptions}
               </ul>
             </div>

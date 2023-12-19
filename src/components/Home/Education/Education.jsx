@@ -13,7 +13,7 @@ const Education = () => {
   }, []);
   return (
     <div className="education-container w-full h-auto bg-[rgb(17,17,34)] text-slate-200 px-8 md:px-8 lg:px-20">
-      <section className="py-10 lg:py-20">
+      <section className="py-14 md:py-16 lg:py-20">
         <SectionTitle heading={"Education"}></SectionTitle>
       </section>
 

@@ -16,6 +16,9 @@ const Navbar = () => {
         <ActiveLink to="/projects">Projects</ActiveLink>
       </li>
       <li>
+        <ActiveLink to="/achievements">Academic Achievements</ActiveLink>
+      </li>
+      <li>
         <ActiveLink to="/contact">Contact</ActiveLink>
       </li>
     </>
@@ -31,7 +34,7 @@ const Navbar = () => {
           <div id="nav-options" className="nav-options ">
             <ul
               id="nav-options-container"
-              className="flex gap-4 text-xl text-slate-200"
+              className="flex gap-4 text-lg text-slate-300 uppercase"
             >
               {navOptions}
             </ul>
