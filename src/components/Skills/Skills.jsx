@@ -4,11 +4,14 @@ import SkillCard from "./SkillCard";
 
 const Skills = () => {
   const [skills, setSkills] = useState([]);
+  const [showAllSkills, setShowAllSkills] = useState(false);
+
   useEffect(() => {
     fetch("skillsData.json")
       .then((res) => res.json())
       .then((data) => setSkills(data));
   }, []);
+
   return (
     <div className="bg-[rgb(17,17,34)] text-slate-200 px-8 md:px-8 lg:px-20">
       <section className="py-14 md:py-16 lg:py-20">
@@ -16,18 +19,42 @@ const Skills = () => {
       </section>
 
       <section>
-        {Object.keys(skills).map((category) => (
-          <div key={category} className="category-container">
-            <h2 className="text-xl md:text-2xl lg:text-3xl font-semibold py-10 text-center underline uppercase ">
-              {category}
-            </h2>
-            <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4">
-              {skills[category].map((skill) => (
-                <SkillCard key={skill.id} skill={skill}></SkillCard>
-              ))}
-            </div>
+        <div className="category-container">
+          <h2 className="text-xl md:text-2xl lg:text-3xl font-semibold py-10 text-center underline uppercase">
+            Programming Languages
+          </h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
+            {skills["programming Languages"].map((skill) => (
+              <SkillCard key={skill.id} skill={skill}></SkillCard>
+            ))}
           </div>
-        ))}
+        </div>
+
+        {Object.keys(skills)
+          .filter((category) => category !== "programming Languages")
+          .map((category) => (
+            <div
+              key={category}
+              className={`category-container ${showAllSkills ? "" : "hidden"}`}
+            >
+              <h2 className="text-xl md:text-2xl lg:text-3xl font-semibold py-10 text-center underline uppercase">
+                {category}
+              </h2>
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
+                {skills[category].map((skill) => (
+                  <SkillCard key={skill.id} skill={skill}></SkillCard>
+                ))}
+              </div>
+            </div>
+          ))}
+        <div className="text-center py-6">
+          <button
+            onClick={() => setShowAllSkills((prev) => !prev)}
+            className="btn btn-sm lg:btn-md border-0 border-x-2 rounded-full border-slate-300 btn-outline text-slate-300 hover:bg-[#F8B90C] "
+          >
+            {showAllSkills ? "Show Less" : "Show All Skills"}
+          </button>
+        </div>
       </section>
     </div>
   );

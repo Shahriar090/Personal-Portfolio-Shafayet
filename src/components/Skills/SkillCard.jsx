@@ -4,9 +4,10 @@ const SkillCard = ({ skill }) => {
   const { id, image, title, description } = skill;
   return (
     <div className="card w-full  shadow-2xl  mx-auto">
-      <figure>
-        <img src={image} alt="Skills" className="w-3/5 mx-auto rounded-lg" />
-      </figure>
+      <picture>
+        <img src={image} alt="Skills" className="w-3/4 mx-auto rounded-lg" />
+      </picture>
+
       <div className="card-body text-center">
         <h2 className="card-title justify-center">{title}</h2>
         {/* <p>{description}</p> */}
