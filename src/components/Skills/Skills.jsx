@@ -9,8 +9,13 @@ const Skills = () => {
   useEffect(() => {
     fetch("skillsData.json")
       .then((res) => res.json())
-      .then((data) => setSkills(data));
+      .then((data) => setSkills(data))
+      .catch((error) => console.error("Error fetching skills data:", error));
   }, []);
+
+  if (!skills || !skills["programming Languages"]) {
+    return null; // or a loading indicator if needed
+  }
 
   return (
     <div className="bg-[rgb(17,17,34)] text-slate-200 px-8 md:px-8 lg:px-20">
