@@ -51,7 +51,7 @@ const Contact = () => {
 
   //   return div start
   return (
-    <div className="section-container w-full h-auto min-h-screen bg-[#111122] text-slate-200 pt-14 px-8 md:px-8 lg:px-20">
+    <div className="section-container w-full h-auto  bg-[#111122] text-slate-200  px-8 md:px-8 lg:px-20">
       <ToastContainer position="top-center" />
       <section>
         <SectionTitle heading={"Let's Talk"}></SectionTitle>
@@ -98,7 +98,7 @@ const Contact = () => {
                 type="text"
                 placeholder="Your Name"
                 name="from_name"
-                className="input input-bordered w-full  bg-slate-200 text-black"
+                className="input input-bordered w-full  bg-slate-300 text-black"
               />
               {/* email */}
               <span className="block">Your Email *</span>
@@ -106,7 +106,7 @@ const Contact = () => {
                 type="Your Email"
                 placeholder="Your Email"
                 name="from_email"
-                className="input input-bordered w-full  bg-slate-200 text-black"
+                className="input input-bordered w-full  bg-slate-300 text-black"
               />
               {/* subject */}
               <span className="block">Subject *</span>
@@ -114,12 +114,12 @@ const Contact = () => {
                 type="text"
                 placeholder="Your Subject"
                 name="from_subject"
-                className="input input-bordered w-full  bg-slate-200 text-black"
+                className="input input-bordered w-full  bg-slate-300 text-black"
               />
               {/* message */}
               <span className="block">Message *</span>
               <textarea
-                className="textarea textarea-bordered textarea-lg w-full  bg-slate-200 text-black"
+                className="textarea textarea-bordered textarea-lg w-full  bg-slate-300 text-black"
                 placeholder="Your Message"
                 name="message"
               ></textarea>

@@ -18,14 +18,14 @@ const Skills = () => {
   }
 
   return (
-    <div className="bg-[rgb(17,17,34)] text-slate-200 px-8 md:px-8 lg:px-20">
-      <section className="py-14 md:py-16 lg:py-20">
+    <div className="bg-[rgb(17,17,34)] text-slate-200 px-8 md:px-8 lg:px-20 ">
+      <section>
         <SectionTitle heading={"Skills"}></SectionTitle>
       </section>
 
       <section>
         <div className="category-container">
-          <h2 className="text-xl md:text-2xl lg:text-3xl font-semibold py-10 text-center underline uppercase">
+          <h2 className="text-xl md:text-2xl lg:text-2xl font-semibold text-center uppercase">
             Programming Languages
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
@@ -42,7 +42,7 @@ const Skills = () => {
               key={category}
               className={`category-container ${showAllSkills ? "" : "hidden"}`}
             >
-              <h2 className="text-xl md:text-2xl lg:text-3xl font-semibold py-10 text-center underline uppercase">
+              <h2 className="text-xl md:text-2xl lg:text-3xl font-semibold py-10 text-center  uppercase">
                 {category}
               </h2>
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
