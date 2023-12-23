@@ -12,7 +12,7 @@ const Education = () => {
       .then((data) => setEduDatas(data));
   }, []);
   return (
-    <div className="education-container w-full h-auto bg-[rgb(17,17,34)] text-slate-200 px-8 md:px-8 lg:px-20 ">
+    <div className="education-container w-full h-auto bg-[rgb(17,17,34)] text-slate-200 px-8 md:px-8 lg:px-20 py-10">
       <section>
         <SectionTitle heading={"Education"}></SectionTitle>
       </section>

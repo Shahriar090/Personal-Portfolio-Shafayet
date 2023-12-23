@@ -18,7 +18,7 @@ const Skills = () => {
   }
 
   return (
-    <div className="bg-[rgb(17,17,34)] text-slate-200 px-8 md:px-8 lg:px-20 ">
+    <div className="bg-[rgb(17,17,34)] text-slate-200 px-8 md:px-8 lg:px-20">
       <section>
         <SectionTitle heading={"Skills"}></SectionTitle>
       </section>
@@ -55,7 +55,7 @@ const Skills = () => {
         <div className="text-center py-6">
           <button
             onClick={() => setShowAllSkills((prev) => !prev)}
-            className="btn btn-sm lg:btn-md border-0 border-x-2 rounded-full border-slate-300 btn-outline text-slate-300 hover:bg-[#F8B90C] "
+            className="btn btn-sm lg:btn-md btn-outline rounded-full text-slate-300 hover:bg-[#F8B90C] "
           >
             {showAllSkills ? "Show Less" : "Show All Skills"}
           </button>

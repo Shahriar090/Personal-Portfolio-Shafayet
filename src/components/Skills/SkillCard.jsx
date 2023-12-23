@@ -5,7 +5,11 @@ const SkillCard = ({ skill }) => {
   return (
     <div className="card w-full shadow-md rounded-md  mx-auto pt-10 lex flex-col items-center">
       <picture className="w-3/5">
-        <img src={image} alt="Skills" className="w-full mx-auto rounded-md" />
+        <img
+          src={image}
+          alt="Skills"
+          className="w-full mx-auto rounded-md bg-white"
+        />
       </picture>
 
       <div className="card-body text-center justify-center items-center">

@@ -2,45 +2,46 @@
   "programming Languages": [
     {
       "id": 1,
-      "image": "https://live.staticflickr.com/65535/53401757944_b013646edb_m.jpg",
+      "image": "https://i.ibb.co/JHCC1ZC/Matlab-Logo.png",
       "title": "MATLAB",
       "description": "High-level programming language for numerical computing and algorithm development."
     },
     {
       "id": 2,
-      "image": "https://live.staticflickr.com/65535/53401860750_1fef937d48_m.jpg",
+      "image": "https://i.ibb.co/GkpFkHK/matlab-simulink.png",
       "title": "SIMULINK",
       "description": "Graphical simulation and modeling tool integrated with MATLAB for dynamic system simulation."
     },
     {
       "id": 3,
-      "image": "https://live.staticflickr.com/65535/53401755849_259c892072_m.jpg",
+      "image": "https://i.ibb.co/FHb0qyQ/python-img.png",
       "title": "Python",
       "description": "General-purpose programming language with extensive libraries, used for various applications."
     },
     {
       "id": 4,
-      "image": "https://live.staticflickr.com/65535/53401870450_ed502f987a_m.jpg",
+      "image": "https://i.ibb.co/YftbqGP/Pyomo.png",
       "title": "Pyomo",
       "description": "Python-based open-source optimization modeling language."
     },
-    {
-      "id": 5,
-      "image": "https://live.staticflickr.com/65535/53401440806_e2f0b801fc_m.jpg",
-      "title": "Sci-kit learn",
-      "description": "Machine learning library for Python."
-    },
+
     {
       "id": 6,
-      "image": "https://live.staticflickr.com/65535/53401441746_4e7d00d222_m.jpg",
+      "image": "https://i.ibb.co/DV58vmY/matplotlib.png",
       "title": "Matplotlib",
       "description": "Python plotting library for creating static, animated, and interactive visualizations."
+    },
+    {
+      "id": 5,
+      "image": "https://i.ibb.co/1KchLCG/sci-kit.png",
+      "title": "Sci-kit learn",
+      "description": "Machine learning library for Python."
     }
   ],
   "Hardware Expertise": [
     {
       "id": 8,
-      "image": "https://live.staticflickr.com/65535/53401875685_b019c286b9_m.jpg",
+      "image": "https://i.ibb.co/mJ3rDRD/arduino.png",
       "title": "Arduino",
       "description": "Open-source electronics platform based on easy-to-use hardware and software."
     },
@@ -58,7 +59,7 @@
     },
     {
       "id": 11,
-      "image": "https://live.staticflickr.com/65535/53401770384_a7795fda23_m.jpg",
+      "image": "https://i.ibb.co/CbvdW3q/Industrial-Automation.jpg",
       "title": "Industrial Automations",
       "description": "Expertise in industrial automation systems."
     }
@@ -66,31 +67,31 @@
   "Software": [
     {
       "id": 12,
-      "image": "https://live.staticflickr.com/65535/53401772084_5d32b6e9d0_m.jpg",
+      "image": "https://i.ibb.co/kmqJ3rn/PVsyst.jpg",
       "title": "PVsyst",
       "description": "Software for simulating solar panel performance and energy production."
     },
     {
       "id": 13,
-      "image": "https://live.staticflickr.com/65535/53400524262_d3c8be20c8_m.jpg",
+      "image": "https://i.ibb.co/gz0Wg0G/homer.webp",
       "title": "Homer",
       "description": "Software for microgrid design and optimization."
     },
     {
       "id": 14,
-      "image": "https://live.staticflickr.com/65535/53401642083_f913a6f290_m.jpg",
+      "image": "https://i.ibb.co/5rqzv2R/auto-cad-2.jpg",
       "title": "AutoCAD",
       "description": "Computer-aided design (CAD) software for 2D and 3D drafting."
     },
     {
       "id": 15,
-      "image": "https://live.staticflickr.com/65535/53401454301_e9efccd927_m.jpg",
+      "image": "https://i.ibb.co/Qp0QQ2S/Multisim.png",
       "title": "Multisim",
       "description": "Circuit simulation software for electronics design."
     },
     {
       "id": 16,
-      "image": "https://live.staticflickr.com/65535/53401455301_8b20dc15cc_m.jpg",
+      "image": "https://i.ibb.co/JjHxrQv/Logo-Automation-Studio.png",
       "title": "Automation Studio",
       "description": "Software for hydraulic, pneumatic, and electrical systems design."
     }
@@ -98,13 +99,13 @@
   "Version Control Tools": [
     {
       "id": 17,
-      "image": "https://live.staticflickr.com/65535/53401645483_80762bcec6_m.jpg",
+      "image": "https://i.ibb.co/6r8qN7Z/Git-Hub-Mark-ea2971cee799.png",
       "title": "GitHub",
       "description": "Web-based platform for version control and collaboration using Git."
     },
     {
       "id": 18,
-      "image": "https://live.staticflickr.com/65535/53400529967_2760a2fa6c_m.jpg",
+      "image": "https://i.ibb.co/2y0Zfn5/bitbucket-logo.png",
       "title": "Bit-Bucket",
       "description": "Web-based platform for version control using Git."
     }
@@ -112,13 +113,13 @@
   "Other Tools": [
     {
       "id": 19,
-      "image": "https://live.staticflickr.com/65535/53401458541_121f777653_m.jpg",
+      "image": "https://i.ibb.co/grhKYvx/aws-iot.png",
       "title": "AWS IoT",
       "description": "Amazon Web Services (AWS) platform for Internet of Things (IoT) applications."
     },
     {
       "id": 20,
-      "image": "https://live.staticflickr.com/65535/53401780709_91ef2b9f9f_m.jpg",
+      "image": "https://i.ibb.co/w4jxR5X/aws-s3-logo.png",
       "title": "S3 Bucket",
       "description": "Scalable object storage in the cloud by AWS."
     }
