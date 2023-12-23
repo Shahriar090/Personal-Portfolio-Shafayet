@@ -15,7 +15,7 @@ const RenderExperience = ({ experience }) => {
   } = experience;
 
   return (
-    <div className="card card-side shadow-sm shadow-purple-700 w-full mx-auto  bg-[rgb(17,17,34)] text-slate-200   mt-5  flex flex-col md:flex-row lg:flex-row">
+    <div className="card card-side shadow-xl  w-full mx-auto  bg-[rgb(17,17,34)] text-slate-300 mt-5 flex flex-col md:flex-row lg:flex-row">
       <Link
         className="w-full md:w-3/6 lg:w-2/5 my-auto"
         to={organizationDetails}
@@ -30,13 +30,13 @@ const RenderExperience = ({ experience }) => {
       </Link>
 
       <div className="card-body w-full md:w-3/6 lg:w-3/6">
-        <h1 className="card-title font-bold text-xl lg:text-2xl">
+        <h1 className="card-title font-bold text-lg md:text-xl lg:text-2xl">
           Designation : {post}
         </h1>
-        <h2 className="font-semibold text-md lg:text-lg">
+        <h2 className="font-semibold text-md md:text-md lg:text-lg">
           Organization : {organization}
         </h2>
-        <div className="sub-container text-md lg:text-lg flex flex-col gap-3">
+        <div className="sub-container text-md md:text-md lg:text-lg flex flex-col gap-3">
           <h3>Job Location : {location}</h3>
 
           <h3>Start Date : {startDate}</h3>
