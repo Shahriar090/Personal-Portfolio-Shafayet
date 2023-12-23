@@ -15,7 +15,7 @@ const RenderExperience = ({ experience }) => {
   } = experience;
 
   return (
-    <div className="card card-side w-full mx-auto  bg-[rgb(17,17,34)] text-slate-200 shadow-xl  mt-5  flex flex-col md:flex-row lg:flex-row">
+    <div className="card card-side shadow-sm shadow-purple-700 w-full mx-auto  bg-[rgb(17,17,34)] text-slate-200   mt-5  flex flex-col md:flex-row lg:flex-row">
       <Link
         className="w-full md:w-3/6 lg:w-2/5 my-auto"
         to={organizationDetails}

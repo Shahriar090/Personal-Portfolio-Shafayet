@@ -4,7 +4,7 @@ import SocialIcons from "../Home/Banner/SocialIcons";
 const Footer = () => {
   return (
     <footer className="w-full bg-[rgb(17,17,34)] border-t-2 border-black text-slate-300 p-8 flex items-center  flex-col md:flex-row lg:flex-row gap-4 justify-between">
-      <div className="socials flex gap-4">
+      <div className="socials flex gap-4 text-slate-400">
         <SocialIcons></SocialIcons>
       </div>
       <div className="copyright">

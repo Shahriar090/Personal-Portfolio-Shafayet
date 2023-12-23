@@ -3,7 +3,7 @@ import React from "react";
 const SkillCard = ({ skill }) => {
   const { id, image, title, description } = skill;
   return (
-    <div className="card w-full shadow-md rounded-md  mx-auto pt-10 lex flex-col items-center">
+    <div className="card w-full shadow-sm shadow-purple-700 rounded-md  mx-auto pt-10 flex flex-col items-center">
       <picture className="w-3/5">
         <img
           src={image}
@@ -16,7 +16,7 @@ const SkillCard = ({ skill }) => {
         <h2 className="card-title justify-center text-xl md:text-2xl lg:text-2xl">
           {title}
         </h2>
-        <p className="text-md">{description}</p>
+        {/* <p className="text-md">{description}</p> */}
       </div>
     </div>
   );

@@ -41,7 +41,7 @@ const Banner = () => {
         </div>
       </div>
       {/* social links */}
-      <div className="social-links absolute bottom-0 right-1 md:right-2 lg:right-3 flex flex-col md:flex-row lg:flex-row gap-3 text-lg lg:text-xl text-slate-300 ">
+      <div className="social-links absolute bottom-0 right-1 md:right-2 lg:right-3 flex flex-col md:flex-row lg:flex-row gap-3 text-lg lg:text-xl text-slate-400 ">
         <SocialIcons></SocialIcons>
       </div>
     </div>
