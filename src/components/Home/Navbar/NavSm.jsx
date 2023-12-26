@@ -1,5 +1,5 @@
 import React from "react";
-import { IoIosSearch } from "react-icons/io";
+
 import { RiMenuLine } from "react-icons/ri";
 import { Link } from "react-router-dom";
 import ActiveLink from "./ActiveLink/ActiveLink";
@@ -8,16 +8,16 @@ import "./NavStyles/nav.css";
 const NavSm = () => {
   const navOptions = (
     <>
-      <li>
+      <li className="border-b-2 border-slate-600 p-2 text-center">
         <ActiveLink to="/">Home</ActiveLink>
       </li>
-      <li>
+      <li className="border-b-2 border-slate-600 p-2 text-center">
         <ActiveLink to="/projects">Projects</ActiveLink>
       </li>
-      <li>
+      <li className="border-b-2 border-slate-600 p-2 text-center">
         <ActiveLink to="/achievements">Academic Achievements</ActiveLink>
       </li>
-      <li>
+      <li className="border-b-2 border-slate-600 p-2 text-center">
         <ActiveLink to="/contact">Contact</ActiveLink>
       </li>
     </>
@@ -43,7 +43,7 @@ const NavSm = () => {
                 aria-label="close sidebar"
                 className="drawer-overlay"
               ></label>
-              <ul className="flex flex-col gap-3 p-6  w-60 min-h-full bg-[rgb(17,17,34)] text-slate-300 text-lg uppercase">
+              <ul className="flex flex-col gap-5 pt-5 w-60 min-h-full bg-[rgb(17,17,34)] text-slate-300 text-lg uppercase">
                 {/* content here */}
                 {navOptions}
               </ul>
@@ -55,16 +55,6 @@ const NavSm = () => {
             </Link>
           </div>
         </div>
-        {/* <div className="search w-full mx-auto py-1 relative">
-          <input
-            type="text"
-            placeholder="Search Here..."
-            className="input input-bordered w-full  border-2  border-gray-300  px-9 h-9 rounded-full"
-          />
-          <div className="nav-search-icon absolute top-3 left-4">
-            <IoIosSearch className="text-lg text-slate-500"></IoIosSearch>
-          </div>
-        </div> */}
       </div>
     </nav>
   );
