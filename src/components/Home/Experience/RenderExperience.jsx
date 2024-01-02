@@ -29,7 +29,7 @@ const RenderExperience = ({ experience }) => {
         </picture>
       </Link>
 
-      <div className="card-body w-full md:w-3/6 lg:w-3/6">
+      <div className="card-body gap-4 w-full md:w-3/6 lg:w-3/6">
         <h1 className="card-title font-bold text-xl md:text-2xl  lg:text-2xl">
           Designation : {post}
         </h1>
