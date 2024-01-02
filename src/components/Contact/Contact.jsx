@@ -51,14 +51,14 @@ const Contact = () => {
 
   //   return div start
   return (
-    <div className="section-container w-full h-auto  bg-[#111122] text-slate-200  px-8 md:px-8 lg:px-20">
+    <div className="section-container w-full h-auto  bg-[#111122] text-slate-200  px-5 md:px-8 lg:px-20">
       <ToastContainer position="top-center" />
       <section>
         <SectionTitle heading={"Let's Talk"}></SectionTitle>
       </section>
       {/* main content */}
       <section className="main-content">
-        <div className="parent-div flex flex-col md:flex-row lg:flex-row gap-5 pt-14 pb-10">
+        <div className="parent-div flex flex-col md:flex-row lg:flex-row gap-5 pt-5 pb-10">
           {/* contact section image, address related topic */}
           <div className="child-one shadow-2xl p-4 w-full  md:w-full lg:w-3/6 ">
             <picture>

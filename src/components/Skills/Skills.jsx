@@ -14,11 +14,11 @@ const Skills = () => {
   }, []);
 
   if (!skills || !skills["programming Languages"]) {
-    return null; // or a loading indicator if needed
+    return null;
   }
 
   return (
-    <div className="bg-[rgb(17,17,34)] text-slate-200 px-8 md:px-8 lg:px-20">
+    <div className="bg-[rgb(17,17,34)] text-slate-200 px-5 md:px-8 lg:px-20">
       <section>
         <SectionTitle heading={"Skills"}></SectionTitle>
       </section>

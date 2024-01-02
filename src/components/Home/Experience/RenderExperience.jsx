@@ -30,25 +30,25 @@ const RenderExperience = ({ experience }) => {
       </Link>
 
       <div className="card-body w-full md:w-3/6 lg:w-3/6">
-        <h1 className="card-title font-bold text-lg md:text-xl lg:text-2xl">
+        <h1 className="card-title font-bold text-xl md:text-2xl  lg:text-2xl">
           Designation : {post}
         </h1>
-        <h2 className="font-semibold text-md md:text-md lg:text-lg">
+        <h2 className="font-semibold text-lg md:text-xl lg:text-xl ">
           Organization : {organization}
         </h2>
         <div className="sub-container text-md md:text-md lg:text-lg flex flex-col gap-3">
-          <h3>Job Location : {location}</h3>
+          <h3 className="text-lg font-semibold">Job Location : {location}</h3>
 
-          <h3>Start Date : {startDate}</h3>
-          <h3>End Date : {endDate}</h3>
+          <h3 className="text-lg font-semibold">Start Date : {startDate}</h3>
+          <h3 className="text-lg font-semibold">End Date : {endDate}</h3>
         </div>
         {/* responsibilities */}
         <div className="collapse bg-[rgb(27,27,55)]">
           <input type="checkbox" />
-          <div className="collapse-title text-md md:text-xl lg:text-xl font-md">
+          <div className="collapse-title text-lg md:text-xl lg:text-xl font-md">
             See Responsibilities
           </div>
-          <div className="collapse-content text-md md:text-lg lg:text-lg ">
+          <div className="collapse-content text-lg">
             <ul className="px-5">
               {responsibilities.map((responsibility, index) => (
                 <li className="list-disc" key={index}>
