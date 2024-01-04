@@ -50,7 +50,7 @@ const NavSm = () => {
             </div>
           </div>
           <div className="logo w-full flex items-center justify-start">
-            <Link className="text-2xl font-bold font-serif">
+            <Link to="/" className="text-2xl font-bold font-serif">
               Shafayet Hossain
             </Link>
           </div>
