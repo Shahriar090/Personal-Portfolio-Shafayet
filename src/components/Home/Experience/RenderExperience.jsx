@@ -30,17 +30,23 @@ const RenderExperience = ({ experience }) => {
       </Link>
 
       <div className="card-body gap-4 w-full md:w-3/6 lg:w-3/6">
-        <h1 className="card-title font-bold text-xl md:text-2xl  lg:text-2xl">
+        <h1 className="card-title font-bold text-xl md:text-2xl  lg:text-2xl font-sans">
           Designation : {post}
         </h1>
-        <h2 className="font-semibold text-lg md:text-xl lg:text-xl ">
+        <h2 className="font-semibold text-lg md:text-xl lg:text-xl font-sans">
           Organization : {organization}
         </h2>
         <div className="sub-container text-md md:text-md lg:text-lg flex flex-col gap-3">
-          <h3 className="text-lg font-semibold">Job Location : {location}</h3>
+          <h3 className="text-lg font-semibold font-sans">
+            Job Location : {location}
+          </h3>
 
-          <h3 className="text-lg font-semibold">Start Date : {startDate}</h3>
-          <h3 className="text-lg font-semibold">End Date : {endDate}</h3>
+          <h3 className="text-lg font-semibold font-sans">
+            Start Date : {startDate}
+          </h3>
+          <h3 className="text-lg font-semibold font-sans">
+            End Date : {endDate}
+          </h3>
         </div>
         {/* responsibilities */}
         <div className="collapse bg-[rgb(27,27,55)]">
@@ -51,13 +57,13 @@ const RenderExperience = ({ experience }) => {
           <div className="collapse-content text-lg">
             <ul className="px-5">
               {responsibilities.map((responsibility, index) => (
-                <li className="list-disc" key={index}>
+                <li className="list-disc font-sans" key={index}>
                   {responsibility.text}
                 </li>
               ))}
             </ul>
 
-            <h1 className="pt-2  text-md md:text-lg lg:text-lg">
+            <h1 className="pt-2  text-md md:text-lg lg:text-lg font-sans">
               <span className="font-semibold">Courses</span> :{" "}
               {courses ? courses : "Not Available"}
             </h1>
