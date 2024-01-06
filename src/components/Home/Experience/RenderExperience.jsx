@@ -30,13 +30,13 @@ const RenderExperience = ({ experience }) => {
       </Link>
 
       <div className="card-body gap-4 w-full md:w-3/6 lg:w-3/6">
-        <h1 className="card-title font-bold text-xl md:text-2xl  lg:text-2xl font-sans">
+        <h1 className="card-title font-bold text-xl md:text-2xl  lg:text-2xl font-sans uppercase">
           Designation : {post}
         </h1>
-        <h2 className="font-semibold text-lg md:text-xl lg:text-xl font-sans">
+        <h2 className="font-semibold text-xl md:text-2xl lg:text-2xl  font-sans">
           Organization : {organization}
         </h2>
-        <div className="sub-container text-md md:text-md lg:text-lg flex flex-col gap-3">
+        <div className="sub-container  flex flex-col gap-3">
           <h3 className="text-lg font-semibold font-sans">
             Job Location : {location}
           </h3>

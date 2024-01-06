@@ -13,9 +13,13 @@ const RenderProject = ({ sinPro }) => {
             About This Project
           </span>
           <p className="text-xl pt-3 ">
-            {descriptions.map((singleItem, index) => (
-              <li key={index}>{singleItem.text}</li>
-            ))}
+            <ul className="px-5">
+              {descriptions.map((singleItem, index) => (
+                <li className="list-disc font-sans" key={index}>
+                  {singleItem.text}
+                </li>
+              ))}
+            </ul>
           </p>
         </h3>
         <h3 className=" flex flex-col gap-2">

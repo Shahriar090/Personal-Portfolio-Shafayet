@@ -16,12 +16,12 @@ const EducationCard = ({ singleData }) => {
     <div className="card w-full mx-auto shadow-xl bg-[rgb(17,17,34)] text-slate-300  transform transition-transform hover:scale-105 duration-300">
       <div className="card-body gap-4">
         <Link to={viewInstitution}>
-          <h1 className="card-title font-bold text-xl md:text-2xl  lg:text-2xl font-sans">
+          <h1 className="card-title font-bold uppercase text-xl md:text-2xl  lg:text-2xl font-sans">
             {institution}
           </h1>
         </Link>
         <Link to={viewDetails}>
-          <h2 className="font-semibold text-lg md:text-xl lg:text-xl font-sans">
+          <h2 className="font-semibold text-xl  font-sans">
             Degree : {degree}
           </h2>
         </Link>
