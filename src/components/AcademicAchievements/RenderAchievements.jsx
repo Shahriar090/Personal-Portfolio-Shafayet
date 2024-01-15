@@ -11,12 +11,12 @@ const RenderAchievements = ({ singleAchievement }) => {
         <h2 className="text-lg font-sans">
           Awarded By : {awardedBy ? awardedBy : "N/A"}
         </h2>
-        <p className="font-sans text-md">
+        <p className="font-sans text-lg">
           Position : {position ? position : "N/A"}
         </p>
-        <p className="font-sans text-md">Year : {year ? year : "N/A"}</p>
+        <p className="font-sans text-lg">Year : {year ? year : "N/A"}</p>
       </div>
-      <picture>
+      <picture className="p-4">
         <img
           src={img}
           alt=""
