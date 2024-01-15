@@ -5,7 +5,7 @@ const RenderAchievements = ({ singleAchievement }) => {
     singleAchievement;
   return (
     <div className="card w-full bg-[rgb(17,17,34)] text-slate-300  shadow-xl">
-      <div className="card-body p-4 gap-4">
+      <div className="card-body p-4 space-y-1">
         <p className="text-lg uppercase font-sans">{category}</p>
         <h2 className="card-title font-sans uppercase">{achievement}</h2>
         <h2 className="text-lg font-sans">

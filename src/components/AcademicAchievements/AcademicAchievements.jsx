@@ -12,7 +12,7 @@ const AcademicAchievements = () => {
   return (
     <div className="bg-[rgb(17,17,34)] text-slate-300 px-5 md:px-8 lg:px-20 py-10">
       <section>
-        <SectionTitle heading={"My Academic Achievements"}></SectionTitle>
+        <SectionTitle heading={"Academic Achievements"}></SectionTitle>
       </section>
       {/* main section */}
       <section>
