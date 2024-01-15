@@ -1,9 +1,5 @@
 import contactImg from "../../assets/Contact/contact-img.avif";
 import SectionTitle from "../../SectionTitle/SectionTitle";
-import { FaLocationDot } from "react-icons/fa6";
-import { HiOutlineMailOpen } from "react-icons/hi";
-import { FaPhoneVolume } from "react-icons/fa6";
-import { GoPerson } from "react-icons/go";
 import emailjs from "@emailjs/browser";
 import React, { useRef } from "react";
 import { ToastContainer, toast } from "react-toastify";

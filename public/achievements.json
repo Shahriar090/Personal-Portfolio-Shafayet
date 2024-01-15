@@ -1,0 +1,29 @@
+[
+  {
+    "id": 1,
+    "img": "https://i.ibb.co/v3trqG4/EU-3.jpg",
+    "category": "Scholarship",
+    "achievement": "Erasmus Mundus full funded master’s scholarship",
+    "awardedBy": "European Union",
+    "position": "",
+    "year": ""
+  },
+  {
+    "id": 2,
+    "img": "https://i.ibb.co/qxZX13S/Nsu-2.png",
+    "category": "Financial Aid",
+    "achievement": " North South University Board of Trustees scholarship recipient",
+    "awardedBy": "North South University, Bangladesh",
+    "position": "",
+    "year": "2015 - 2018"
+  },
+  {
+    "id": 3,
+    "img": "https://i.ibb.co/Ykd5y91/Cum-Laude.png",
+    "category": "Academic Distinction",
+    "achievement": "Cum Laude",
+    "position": "21 out of 290",
+    "awardedBy": "",
+    "year": ""
+  }
+]
