@@ -16,3 +16,9 @@
     @apply text-lg font-semibold font-sans;
   }
 }
+
+@layer components {
+  .btn-primary {
+    @apply px-4 py-2 rounded-md border border-slate-300   text-slate-300 hover:bg-[#F8B90C] hover:text-black;
+  }
+}

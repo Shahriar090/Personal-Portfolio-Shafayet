@@ -18,10 +18,10 @@ const Banner = () => {
           </picture>
         </div>
         <div className="hero-texts w-full flex flex-col gap-5 md:gap-6 lg:gap-8 text-slate-300">
-          <h1 className="text-3xl md:text-3xl lg:text-5xl font-serif">
+          <h1 className="custom-heading-style text-2xl lg:text-4xl font-serif tracking-wider">
             Hello, I am Mohammad Shafayet Hossain
           </h1>
-          <p className="text-xl md:text-2xl lg:text-2xl font-sans">
+          <p>
             I am an Eramsus Mundus Master’s graduate possessing high enthusiasm
             in renewable energy with strong background in modern power systems,
             power electronics, design and optimization of microgrids, energy
@@ -33,14 +33,10 @@ const Banner = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <button className="btn  btn-outline  text-slate-300 hover:bg-[#F8B90C]">
-                View Resume
-              </button>
+              <button className="btn-primary">View Resume</button>
             </Link>
             <Link to="/contact">
-              <button className="btn  btn-outline  text-slate-300 hover:bg-[#F8B90C]">
-                Contact Now
-              </button>
+              <button className="btn-primary">Contact Now</button>
             </Link>
           </div>
           {/* social links */}
