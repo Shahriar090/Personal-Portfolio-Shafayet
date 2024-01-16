@@ -30,23 +30,13 @@ const RenderExperience = ({ experience }) => {
       </Link>
 
       <div className="card-body gap-4 w-full md:w-3/6 lg:w-3/6">
-        <h1 className="card-title font-bold text-xl md:text-2xl  lg:text-2xl font-sans uppercase">
-          Designation : {post}
-        </h1>
-        <h2 className="font-semibold text-xl md:text-2xl lg:text-2xl  font-sans">
-          Organization : {organization}
-        </h2>
+        <h1>Designation : {post}</h1>
+        <h2>Organization : {organization}</h2>
         <div className="sub-container  flex flex-col gap-3">
-          <h3 className="text-lg font-semibold font-sans">
-            Job Location : {location}
-          </h3>
+          <h3>Job Location : {location}</h3>
 
-          <h3 className="text-lg font-semibold font-sans">
-            Start Date : {startDate}
-          </h3>
-          <h3 className="text-lg font-semibold font-sans">
-            End Date : {endDate}
-          </h3>
+          <h3>Start Date : {startDate}</h3>
+          <h3>End Date : {endDate}</h3>
         </div>
         {/* responsibilities */}
         <div className="collapse bg-[rgb(27,27,55)]">
@@ -63,10 +53,10 @@ const RenderExperience = ({ experience }) => {
               ))}
             </ul>
 
-            <h1 className="pt-2  text-md md:text-lg lg:text-lg font-sans">
+            <p className="pt-2  ">
               <span className="font-semibold">Courses</span> :{" "}
               {courses ? courses : "Not Available"}
-            </h1>
+            </p>
           </div>
         </div>
       </div>

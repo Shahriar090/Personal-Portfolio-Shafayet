@@ -13,9 +13,7 @@ const SkillCard = ({ skill }) => {
       </picture>
 
       <div className="card-body text-center justify-center items-center">
-        <h2 className="card-title justify-center text-xl md:text-2xl lg:text-2xl font-semibold font-sans text-slate-300">
-          {title}
-        </h2>
+        <h2>{title}</h2>
         {/* <p className="text-md">{description}</p> */}
       </div>
     </div>

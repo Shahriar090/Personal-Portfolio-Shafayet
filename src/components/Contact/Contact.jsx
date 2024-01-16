@@ -70,20 +70,20 @@ const Contact = () => {
             </picture>
 
             <div className="texts pt-5 flex flex-col  gap-4  text-sm md:text-2xl lg:text-2xl">
-              <h1 className="flex gap-3 items-center">
-                <GoPerson></GoPerson>Mohammad Shafayet Hossain
-              </h1>
               <h2 className="flex gap-3 items-center">
+                <GoPerson></GoPerson>Mohammad Shafayet Hossain
+              </h2>
+              <h3 className="flex gap-3 items-center">
                 <FaLocationDot></FaLocationDot>Forskarbacken 03, Lappis,
                 Stockholm
-              </h2>
-              <h2 className="flex gap-3 items-center">
+              </h3>
+              <h3 className="flex gap-3 items-center">
                 <HiOutlineMailOpen></HiOutlineMailOpen>
                 shafayethossain957@gmail.com
-              </h2>
-              <h2 className="flex gap-3 items-center">
+              </h3>
+              <h3 className="flex gap-3 items-center">
                 <FaPhoneVolume></FaPhoneVolume>+33-745639099
-              </h2>
+              </h3>
             </div>
           </div>
           <div className="child-two w-full   md:w-full lg:w-3/6 shadow-2xl p-4">

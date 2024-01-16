@@ -25,7 +25,7 @@ const Navbar = () => {
   );
   return (
     <nav className="relative">
-      <div className="nav-large hidden lg:block w-full  h-auto px-20 py-3 text-slate-200 bg-[rgb(17,17,34)] fixed top-0 left-0 right-0 z-50 shadow-lg">
+      <div className="nav-large hidden lg:block w-full  h-auto max-w-screen-2xl mx-auto px-20 py-3 text-slate-200 bg-[rgb(17,17,34)] fixed top-0 left-0 right-0 z-50 shadow-lg">
         <div className="nav-contents flex items-center justify-between">
           <div className="logo ">
             <Link to="/" className="text-2xl font-serif">
