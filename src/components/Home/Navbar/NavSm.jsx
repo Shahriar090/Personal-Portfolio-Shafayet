@@ -34,7 +34,7 @@ const NavSm = () => {
                 htmlFor="my-drawer"
                 className="btn btn-outline border-0 drawer-button"
               >
-                <RiMenuLine className="text-3xl text-slate-100"></RiMenuLine>
+                <RiMenuLine className="text-2xl text-slate-100"></RiMenuLine>
               </label>
             </div>
             <div className="drawer-side ">
@@ -50,8 +50,11 @@ const NavSm = () => {
             </div>
           </div>
           <div className="logo w-full flex items-center justify-start">
-            <Link to="/" className="text-2xl font-bold font-serif">
-              Shafayet Hossain
+            <Link to="/">
+              <h1 className="text-xl tracking-wide font-semibold font-serif">
+                {" "}
+                Shafayet Hossain
+              </h1>
             </Link>
           </div>
         </div>
