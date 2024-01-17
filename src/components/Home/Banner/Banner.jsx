@@ -33,10 +33,10 @@ const Banner = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <button className="btn-primary">View Resume</button>
+              <button className="btn-outline">View Resume</button>
             </Link>
             <Link to="/contact">
-              <button className="btn-primary">Contact Now</button>
+              <button className="btn-outline">Contact Now</button>
             </Link>
           </div>
           {/* social links */}

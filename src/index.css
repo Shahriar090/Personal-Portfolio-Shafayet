@@ -1,24 +1,5 @@
+@import "./style/button.css";
+@import "./style/typography.css";
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-@layer base {
-  h1 {
-    @apply font-bold uppercase text-xl md:text-2xl  lg:text-2xl font-sans;
-  }
-  h2 {
-    @apply font-semibold text-xl  font-sans;
-  }
-  h3 {
-    @apply text-lg font-semibold font-sans;
-  }
-  p {
-    @apply text-lg font-semibold font-sans;
-  }
-}
-
-@layer components {
-  .btn-primary {
-    @apply px-4 py-2 rounded-md border border-slate-300   text-slate-300 hover:bg-[#F8B90C] hover:text-black;
-  }
-}
