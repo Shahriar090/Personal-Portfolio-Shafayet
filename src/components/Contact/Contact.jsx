@@ -127,7 +127,7 @@ const Contact = () => {
               <input
                 type="submit"
                 value="Sent"
-                className="btn-primary w-3/6 mx-auto"
+                className="btn-outline w-3/6 mx-auto"
               />
             </form>
           </div>

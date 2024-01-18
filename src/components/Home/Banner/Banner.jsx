@@ -3,6 +3,7 @@ import bannerImg from "../../../assets/shafayet.jpg";
 
 import { Link } from "react-router-dom";
 import SocialIcons from "./Social-Links/SocialIcons";
+import Button from "../../../ui/Button";
 
 const Banner = () => {
   return (
@@ -33,10 +34,12 @@ const Banner = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <button className="btn-outline">View Resume</button>
+              {/* <button className="btn-outline">View Resume</button> */}
+              <Button>View Resume</Button>
             </Link>
             <Link to="/contact">
-              <button className="btn-outline">Contact Now</button>
+              {/* <button className="btn-outline">Contact Now</button> */}
+              <Button>Contact Now</Button>
             </Link>
           </div>
           {/* social links */}

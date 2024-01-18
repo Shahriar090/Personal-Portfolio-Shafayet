@@ -55,7 +55,7 @@ const Skills = () => {
         <div className="text-center py-6">
           <button
             onClick={() => setShowAllSkills((prev) => !prev)}
-            className="btn-primary"
+            className="btn-outline"
           >
             {showAllSkills ? "Show Less" : "Show All Skills"}
           </button>
