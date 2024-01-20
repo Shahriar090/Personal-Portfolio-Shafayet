@@ -16,7 +16,7 @@ const Banner = () => {
               <img
                 src={bannerImg}
                 alt="Image Of Shafayet"
-                className="w-full lg:w-3/5 lg:rounded-full lg:hover:rounded-lg transition-all duration-300 mx-auto"
+                className="w-full rounded-lg lg:w-3/5 lg:rounded-full lg:hover:rounded-lg transition-all duration-300 mx-auto"
               />
             </picture>
           </div>

@@ -8,28 +8,24 @@ const RenderProject = ({ sinPro }) => {
       <div className="card card-side flex-col md:flex-row lg:flex-row  text-slate-100 shadow-md">
         <div className="card-body p-4 md:p-8 lg:p-8  gap-5">
           <h1>{title}</h1>
-          <h2>
-            About This Project
-            <p className=" pt-3 ">
-              <ul className="px-5">
-                {descriptions.map((singleItem, index) => (
-                  <li className="list-disc font-sans" key={index}>
-                    {singleItem.text}
-                  </li>
-                ))}
-              </ul>
-            </p>
-          </h2>
-          <h2 className=" flex flex-col gap-2">
-            Used Tools
-            <ul className="px-5 text-lg">
-              {tools.map((tool, index) => (
+          <h2>About This Project</h2>
+          <p className=" pt-3 ">
+            <ul className="px-5">
+              {descriptions.map((singleItem, index) => (
                 <li className="list-disc font-sans" key={index}>
-                  {tool}
+                  {singleItem.text}
                 </li>
               ))}
             </ul>
-          </h2>
+          </p>
+          <h2>Used Tools</h2>
+          <ul className="px-5 text-lg">
+            {tools.map((tool, index) => (
+              <li className="list-disc font-sans" key={index}>
+                {tool}
+              </li>
+            ))}
+          </ul>
           <h3>
             Company Affiliation :{" "}
             {companyAffiliation ? companyAffiliation : "N/A"}

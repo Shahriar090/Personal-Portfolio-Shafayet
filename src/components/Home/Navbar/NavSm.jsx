@@ -8,32 +8,29 @@ import "./NavStyles/nav.css";
 const NavSm = () => {
   const navOptions = (
     <>
-      <li className="border-b-2 border-slate-300 p-2 text-center font-sans">
+      <li className="border-b-2 border-slate-100 p-2 text-center font-sans">
         <ActiveLink to="/">Home</ActiveLink>
       </li>
-      <li className="border-b-2 border-slate-300  p-2 text-center font-sans">
+      <li className="border-b-2 border-slate-100  p-2 text-center font-sans">
         <ActiveLink to="/projects">Projects</ActiveLink>
       </li>
-      <li className="border-b-2 border-slate-300  p-2 text-center font-sans">
+      <li className="border-b-2 border-slate-100  p-2 text-center font-sans">
         <ActiveLink to="/achievements">Academic Achievements</ActiveLink>
       </li>
-      <li className="border-b-2 border-slate-300  p-2 text-center font-sans">
+      <li className="border-b-2 border-slate-100  p-2 text-center font-sans">
         <ActiveLink to="/contact">Contact</ActiveLink>
       </li>
     </>
   );
   return (
     <nav className="relative">
-      <div className="navbar-small w-full h-auto fixed top-0 right-0 left-0 z-50 lg:hidden text-slate-100  bg-gradient-custom px-4 py-2">
+      <div className="navbar-small w-full h-auto fixed top-0 right-0 left-0 z-50 lg:hidden text-slate-100  bg-[#476987] px-4 py-2">
         <div className="nav-contents flex gap-14 justify-center items-center">
           <div className="drawer z-50 w-3/12 ">
             <input id="my-drawer" type="checkbox" className="drawer-toggle" />
             <div className="drawer-content">
               {/* Page content here */}
-              <label
-                htmlFor="my-drawer"
-                className="btn btn-outline border-0 drawer-button"
-              >
+              <label htmlFor="my-drawer" className="drawer-button">
                 <RiMenuLine className="text-2xl text-slate-100"></RiMenuLine>
               </label>
             </div>
@@ -43,7 +40,7 @@ const NavSm = () => {
                 aria-label="close sidebar"
                 className="drawer-overlay"
               ></label>
-              <ul className="flex flex-col gap-6 pt-8 w-60 min-h-full  bg-gradient-custom text-slate-300 text-lg uppercase">
+              <ul className="flex flex-col gap-6 pt-8 w-60 min-h-full  bg-gradient-custom text-white text-lg uppercase">
                 {/* content here */}
                 {navOptions}
               </ul>
