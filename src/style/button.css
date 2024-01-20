@@ -1,8 +1,8 @@
 @layer components {
   .btn-solid {
-    @apply px-3 py-2 rounded-md  text-slate-300 bg-[rgb(17,17,34)] hover:bg-[#F8B90C] hover:text-black transition-all duration-200;
+    @apply px-3 py-2 rounded-md  text-slate-200 bg-[rgb(17,17,34)] hover:bg-[#F8B90C] hover:text-black transition-all duration-200;
   }
   .btn-outline {
-    @apply px-3 py-2 rounded-md border border-slate-300   text-slate-300 hover:bg-[#F8B90C] hover:text-black transition-all duration-200;
+    @apply px-3 py-2 shadow-xl rounded-full border text-white hover:bg-inherit hover:text-inherit transition-all duration-200;
   }
 }

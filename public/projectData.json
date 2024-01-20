@@ -55,7 +55,7 @@
         "text": "Sizing of PV panels, energy storage based on LCOE, ROI & loss of load probability"
       }
     ],
-    "tools": ["HOMER", "PVsyst", "SketchUp", "PVGIS"],
+    "tools": ["HOMER", "PVSYST", "SKETCHUP", "PVGIS"],
     "companyAffiliation": ["John Cockerill", "University of Lorraine"]
   }
 ]

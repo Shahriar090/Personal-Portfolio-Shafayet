@@ -25,18 +25,18 @@ const Navbar = () => {
   );
   return (
     <nav className="relative">
-      <div className="nav-large hidden lg:block w-full  h-auto max-w-screen-2xl mx-auto px-20 py-3 text-slate-200 bg-[rgb(17,17,34)] fixed top-0 left-0 right-0 z-50 shadow-lg">
+      <div className="nav-large hidden lg:block w-full  h-auto max-w-screen-2xl mx-auto px-20 py-3 text-white  fixed top-0 left-0 right-0 z-50 ">
         <div className="nav-contents flex items-center justify-between">
           <div className="logo ">
-            <Link to="/" className="text-2xl font-serif">
-              Shafayet Hossain
+            <Link to="/">
+              <h2 className="text-2xl font-serif">Shafayet Hossain</h2>
             </Link>
           </div>
 
           <div id="nav-options" className="nav-options ">
             <ul
               id="nav-options-container"
-              className="flex gap-4 text-lg text-slate-300 uppercase"
+              className="flex gap-4 text-lg text-white uppercase"
             >
               {navOptions}
             </ul>

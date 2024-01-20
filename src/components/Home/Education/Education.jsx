@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 
 import EducationCard from "./EducationCard";
 import SectionTitle from "../../../SectionTitle/SectionTitle";
+import Container from "../../../utils/container";
 
 const Education = () => {
   const [eduDatas, setEduDatas] = useState([]);
@@ -11,21 +12,23 @@ const Education = () => {
       .then((data) => setEduDatas(data));
   }, []);
   return (
-    <div className="education-container bg-[rgb(17,17,34)] text-slate-300 px-5 md:px-8 lg:px-20 py-10">
-      <section>
-        <SectionTitle heading={"Education"}></SectionTitle>
-      </section>
+    <div className="education-container ">
+      <Container>
+        <section>
+          <SectionTitle heading={"Education"}></SectionTitle>
+        </section>
 
-      <section className="educational-detail">
-        <div className="education-data grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4  lg:gap-6">
-          {eduDatas.map((singleData) => (
-            <EducationCard
-              key={singleData.id}
-              singleData={singleData}
-            ></EducationCard>
-          ))}
-        </div>
-      </section>
+        <section className="educational-detail">
+          <div className="education-data grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4  lg:gap-6">
+            {eduDatas.map((singleData) => (
+              <EducationCard
+                key={singleData.id}
+                singleData={singleData}
+              ></EducationCard>
+            ))}
+          </div>
+        </section>
+      </Container>
     </div>
   );
 };

@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import SectionTitle from "../../../SectionTitle/SectionTitle";
 import RenderExperience from "./RenderExperience";
+import Container from "../../../utils/container";
 
 const Experience = () => {
   const [experiences, setExperiences] = useState([]);
@@ -10,20 +11,22 @@ const Experience = () => {
       .then((data) => setExperiences(data));
   }, []);
   return (
-    <div className="experience-container bg-[rgb(17,17,34)]  px-5 md:px-8 lg:px-20 ">
-      <section>
-        <SectionTitle heading={"Experience"}></SectionTitle>
-      </section>
+    <div className="experience-container">
+      <Container>
+        <section>
+          <SectionTitle heading={"Experience"}></SectionTitle>
+        </section>
 
-      <section>
-        <div className="experience-container"></div>
-        {experiences.map((experience) => (
-          <RenderExperience
-            key={experience.id}
-            experience={experience}
-          ></RenderExperience>
-        ))}
-      </section>
+        <section>
+          <div className="experience-container"></div>
+          {experiences.map((experience) => (
+            <RenderExperience
+              key={experience.id}
+              experience={experience}
+            ></RenderExperience>
+          ))}
+        </section>
+      </Container>
     </div>
   );
 };

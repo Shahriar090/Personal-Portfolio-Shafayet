@@ -24,7 +24,7 @@ const NavSm = () => {
   );
   return (
     <nav className="relative">
-      <div className="navbar-small w-full h-auto fixed top-0 right-0 left-0 z-50 lg:hidden text-slate-100 bg-[rgb(17,17,34)]  px-4 py-2">
+      <div className="navbar-small w-full h-auto fixed top-0 right-0 left-0 z-50 lg:hidden text-slate-100   px-4 py-2">
         <div className="nav-contents flex gap-14 justify-center items-center">
           <div className="drawer z-50 w-3/12 ">
             <input id="my-drawer" type="checkbox" className="drawer-toggle" />

@@ -3,13 +3,13 @@
     {
       "id": 1,
       "image": "https://i.ibb.co/JHCC1ZC/Matlab-Logo.png",
-      "title": "MATLAB",
+      "title": "Matlab",
       "description": "High-level programming language for numerical computing and algorithm development."
     },
     {
       "id": 2,
       "image": "https://i.ibb.co/GkpFkHK/matlab-simulink.png",
-      "title": "SIMULINK",
+      "title": "Simulink",
       "description": "Graphical simulation and modeling tool integrated with MATLAB for dynamic system simulation."
     },
     {

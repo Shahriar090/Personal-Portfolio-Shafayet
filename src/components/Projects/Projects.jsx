@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import SectionTitle from "../../SectionTitle/SectionTitle";
 import RenderProject from "./RenderProject";
+import Container from "../../utils/container";
 
 const Projects = () => {
   const [projects, setProjects] = useState([]);
@@ -10,19 +11,21 @@ const Projects = () => {
       .then((data) => setProjects(data));
   }, []);
   return (
-    <div className="projects-container bg-[rgb(17,17,34)] text-slate-300 px-5 md:px-8 lg:px-20 py-10">
+    <div className="projects-container ">
       {/* section title */}
-      <section>
-        <SectionTitle heading={"My Projects"}></SectionTitle>
-      </section>
-      {/* main content */}
-      <section>
-        <div className="projects space-y-5">
-          {projects.map((sinPro) => (
-            <RenderProject key={sinPro.id} sinPro={sinPro}></RenderProject>
-          ))}
-        </div>
-      </section>
+      <Container>
+        <section>
+          <SectionTitle heading={"My Projects"}></SectionTitle>
+        </section>
+        {/* main content */}
+        <section>
+          <div className="projects space-y-5">
+            {projects.map((sinPro) => (
+              <RenderProject key={sinPro.id} sinPro={sinPro}></RenderProject>
+            ))}
+          </div>
+        </section>
+      </Container>
     </div>
   );
 };

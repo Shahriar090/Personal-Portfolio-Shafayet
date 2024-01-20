@@ -4,7 +4,7 @@ const RenderAchievements = ({ singleAchievement }) => {
   const { img, category, achievement, awardedBy, position, year } =
     singleAchievement;
   return (
-    <div className="card w-full bg-[rgb(17,17,34)] text-slate-300  shadow-xl">
+    <div className="card w-full  text-slate-100  shadow-md">
       <div className="card-body p-4 space-y-1">
         <p>{category}</p>
         <h1>{achievement}</h1>

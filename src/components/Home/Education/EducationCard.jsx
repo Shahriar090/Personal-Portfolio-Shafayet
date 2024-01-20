@@ -13,8 +13,8 @@ const EducationCard = ({ singleData }) => {
     viewInstitution,
   } = singleData;
   return (
-    <div className="card w-full mx-auto shadow-xl bg-[rgb(17,17,34)] text-slate-300  transform transition-transform hover:scale-105 duration-300">
-      <div className="card-body gap-4">
+    <div className="card w-full mx-auto shadow-sm  text-slate-100  transform transition-transform hover:scale-105 duration-300">
+      <div className="card-body gap-4 p-3">
         <Link to={viewInstitution}>
           <h1>{institution}</h1>
         </Link>
@@ -29,7 +29,7 @@ const EducationCard = ({ singleData }) => {
           <img
             src={institutionImg}
             alt="Institution Image"
-            className="w-full bg-white rounded-xl opacity-90"
+            className="w-full h-[300px] bg-white rounded-lg opacity-90 "
           />
         </picture>
       </div>

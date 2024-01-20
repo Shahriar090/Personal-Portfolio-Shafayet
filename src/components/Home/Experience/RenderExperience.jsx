@@ -15,7 +15,7 @@ const RenderExperience = ({ experience }) => {
   } = experience;
 
   return (
-    <div className="card card-side shadow-xl  w-full mx-auto  bg-[rgb(17,17,34)] text-slate-300 mt-5 flex flex-col md:flex-row lg:flex-row">
+    <div className="card card-side shadow-xl  w-full mx-auto text-slate-100 mt-5 flex flex-col md:flex-row lg:flex-row">
       <Link
         className="w-full md:w-3/6 lg:w-2/5 my-auto"
         to={organizationDetails}
@@ -24,7 +24,7 @@ const RenderExperience = ({ experience }) => {
           <img
             src={organizationImg}
             alt="Image"
-            className="w-3/4 md:w-3/6 lg:w-3/6 bg-white opacity-90 rounded-lg mx-auto"
+            className="w-3/4 md:w-3/6 lg:w-3/6 h-[200px] bg-white opacity-90 rounded-lg mx-auto"
           />
         </picture>
       </Link>
@@ -39,12 +39,12 @@ const RenderExperience = ({ experience }) => {
           <h3>End Date : {endDate}</h3>
         </div>
         {/* responsibilities */}
-        <div className="collapse bg-[rgb(27,27,55)]">
+        <div className="collapse">
           <input type="checkbox" />
-          <div className="collapse-title text-lg md:text-xl lg:text-xl font-md">
+          <div className="collapse-title text-lg md:text-xl lg:text-xl bg-[#2F4D6B]">
             See Responsibilities
           </div>
-          <div className="collapse-content text-lg">
+          <div className="collapse-content text-lg ">
             <ul className="px-5">
               {responsibilities.map((responsibility, index) => (
                 <li className="list-disc font-sans" key={index}>

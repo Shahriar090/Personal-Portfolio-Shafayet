@@ -1,17 +1,15 @@
 .active {
-  color: white;
-
-  font-weight: bold;
+  text-decoration: underline;
 }
 
 #nav-options-container li a {
   display: block;
-  padding: 5px 8px;
+  padding: 6px 8px;
   text-align: center;
   border-radius: 10px;
   transition: 0.3s;
 }
 #nav-options-container li a:hover {
-  background: rgb(248, 185, 12);
+  background: #537895;
   color: white;
 }
