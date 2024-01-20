@@ -12,7 +12,7 @@ const Education = () => {
       .then((data) => setEduDatas(data));
   }, []);
   return (
-    <div className="education-container  bg-gradient-custom">
+    <div className="education-container">
       <Container>
         <section>
           <SectionTitle heading={"Education"}></SectionTitle>

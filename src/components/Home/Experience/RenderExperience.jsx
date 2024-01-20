@@ -24,7 +24,7 @@ const RenderExperience = ({ experience }) => {
           <img
             src={organizationImg}
             alt="Image"
-            className="w-3/4 md:w-3/6 lg:w-3/6 h-[200px] bg-white opacity-90 rounded-lg mx-auto"
+            className="w-3/4 md:w-3/6 lg:w-3/6  bg-white opacity-90 rounded-lg mx-auto"
           />
         </picture>
       </Link>
