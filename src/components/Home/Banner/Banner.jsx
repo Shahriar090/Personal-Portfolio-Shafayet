@@ -11,12 +11,12 @@ const Banner = () => {
     <div className="hero relative w-full h-auto">
       <Container>
         <div className="hero-items w-full flex flex-col lg:flex-row gap-5 md:gap-6 lg:gap-8  items-center justify-center">
-          <div className="hero-image w-full">
+          <div className="hero-image w-full overflow-hidden">
             <picture>
               <img
                 src={bannerImg}
                 alt="Image Of Shafayet"
-                className="w-full rounded-lg lg:w-3/5 lg:rounded-full lg:hover:rounded-lg transition-all duration-300 mx-auto"
+                className="w-full rounded-lg lg:w-3/5 lg:rounded-full lg:hover:rounded-lg transition-all duration-300 hover:scale-125 mx-auto"
               />
             </picture>
           </div>

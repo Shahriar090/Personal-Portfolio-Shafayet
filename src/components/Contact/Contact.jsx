@@ -52,90 +52,95 @@ const Contact = () => {
 
   //   return div start
   return (
-    <div className="section-container w-full h-auto   text-slate-100 ">
-      <ToastContainer position="top-center" />
-      <Container>
-        <section>
-          <SectionTitle heading={"Let's Talk"}></SectionTitle>
-        </section>
-        {/* main content */}
-        <section className="main-content">
-          <div className="parent-div flex flex-col md:flex-row lg:flex-row gap-5 pt-5 pb-10">
-            {/* contact section image, address related topic */}
-            <div className="child-one shadow-2xl p-4 w-full  md:w-full lg:w-3/6 ">
-              <picture>
-                <img
-                  src={contactImg}
-                  alt="Contact Image"
-                  className="w-full md:w-3/4 lg:w-3/6 rounded-lg opacity-80"
-                />
-              </picture>
+    // <div className="section-container w-full h-auto   text-slate-100 ">
+    //   <ToastContainer position="top-center" />
+    //   <Container>
+    //     <section>
+    //       <SectionTitle heading={"Let's Talk"}></SectionTitle>
+    //     </section>
+    //     {/* main content */}
+    //     <section className="main-content">
+    //       <div className="parent-div flex flex-col lg:flex-row shadow-xl gap-5 ">
+    //         {/* contact section image, address related topic */}
+    //         <div className="child-one p-4 w-full h-full md:w-full lg:w-3/6 ">
+    //           <picture>
+    //             <img
+    //               src={contactImg}
+    //               alt="Contact Image"
+    //               className="w-full md:w-3/4 lg:w-3/6 rounded-lg opacity-80"
+    //             />
+    //           </picture>
 
-              <div className="texts pt-5 flex flex-col  gap-4  text-sm md:text-2xl lg:text-2xl">
-                <h2 className="flex gap-3 items-center">
-                  <GoPerson></GoPerson>Mohammad Shafayet Hossain
-                </h2>
-                <h3 className="flex gap-3 items-center">
-                  <FaLocationDot></FaLocationDot>Forskarbacken 03, Lappis,
-                  Stockholm
-                </h3>
-                <h3 className="flex gap-3 items-center">
-                  <HiOutlineMailOpen></HiOutlineMailOpen>
-                  shafayethossain957@gmail.com
-                </h3>
-                <h3 className="flex gap-3 items-center">
-                  <FaPhoneVolume></FaPhoneVolume>+33-745639099
-                </h3>
-              </div>
-            </div>
-            <div className="child-two w-full   md:w-full lg:w-3/6 shadow-2xl p-4">
-              {/* contact form start from here */}
-              <form
-                ref={form}
-                onSubmit={sendEmail}
-                className="flex flex-col gap-5"
-              >
-                <span className="block">Your Name *</span>
-                <input
-                  type="text"
-                  placeholder="Your Name"
-                  name="from_name"
-                  className="input input-bordered w-full  bg-slate-300 text-black"
-                />
-                {/* email */}
-                <span className="block">Your Email *</span>
-                <input
-                  type="Your Email"
-                  placeholder="Your Email"
-                  name="from_email"
-                  className="input input-bordered w-full  bg-slate-300 text-black"
-                />
-                {/* subject */}
-                <span className="block">Subject *</span>
-                <input
-                  type="text"
-                  placeholder="Your Subject"
-                  name="from_subject"
-                  className="input input-bordered w-full  bg-slate-300 text-black"
-                />
-                {/* message */}
-                <span className="block">Message *</span>
-                <textarea
-                  className="textarea textarea-bordered textarea-lg w-full  bg-slate-300 text-black"
-                  placeholder="Your Message"
-                  name="message"
-                ></textarea>
+    //           <div className="texts pt-5 flex flex-col  gap-4 ">
+    //             <h2 className="flex gap-3 items-center">
+    //               <GoPerson></GoPerson>Mohammad Shafayet Hossain
+    //             </h2>
+    //             <h3 className="flex gap-3 items-center">
+    //               <FaLocationDot></FaLocationDot>Forskarbacken 03, Lappis,
+    //               Stockholm
+    //             </h3>
+    //             <h3 className="flex gap-3 items-center">
+    //               <HiOutlineMailOpen></HiOutlineMailOpen>
+    //               shafayethossain957@gmail.com
+    //             </h3>
+    //             <h3 className="flex gap-3 items-center">
+    //               <FaPhoneVolume></FaPhoneVolume>+33-745639099
+    //             </h3>
+    //           </div>
+    //         </div>
+    //         <div className="child-two w-full   md:w-full lg:w-3/6 p-4">
+    //           {/* contact form start from here */}
+    //           <form
+    //             ref={form}
+    //             onSubmit={sendEmail}
+    //             className="flex flex-col  gap-5"
+    //           >
+    //             <span className="block">Your Name *</span>
+    //             <input
+    //               type="text"
+    //               placeholder="Your Name"
+    //               name="from_name"
+    //               className="input input-bordered w-full  bg-slate-300 text-black"
+    //             />
+    //             {/* email */}
+    //             <span className="block">Your Email *</span>
+    //             <input
+    //               type="Your Email"
+    //               placeholder="Your Email"
+    //               name="from_email"
+    //               className="input input-bordered w-full  bg-slate-300 text-black"
+    //             />
+    //             {/* subject */}
+    //             <span className="block">Subject *</span>
+    //             <input
+    //               type="text"
+    //               placeholder="Your Subject"
+    //               name="from_subject"
+    //               className="input input-bordered w-full  bg-slate-300 text-black"
+    //             />
+    //             {/* message */}
+    //             <span className="block">Message *</span>
+    //             <textarea
+    //               className="textarea textarea-bordered textarea-lg w-full  bg-slate-300 text-black"
+    //               placeholder="Your Message"
+    //               name="message"
+    //             ></textarea>
 
-                <input
-                  type="submit"
-                  value="Sent"
-                  className="btn-outline w-3/6 mx-auto"
-                />
-              </form>
-            </div>
-          </div>
-        </section>
-      </Container>
+    //             <input
+    //               type="submit"
+    //               value="Sent"
+    //               className="btn-outline w-3/6 mx-auto"
+    //             />
+    //           </form>
+    //         </div>
+    //       </div>
+    //     </section>
+    //   </Container>
+    // </div>
+    <div className="w-full h-screen">
+      <h1 className="mt-10 uppercase text-red-500">
+        This section is not available right now, Will be available soon
+      </h1>
     </div>
   );
 };
