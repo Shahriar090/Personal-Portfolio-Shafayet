@@ -24,7 +24,7 @@ const NavSm = () => {
   );
   return (
     <nav className="relative">
-      <div className="navbar-small w-full h-auto fixed top-0 right-0 left-0 z-50 lg:hidden text-slate-100   px-4 py-2">
+      <div className="navbar-small w-full h-auto fixed top-0 right-0 left-0 z-50 lg:hidden text-slate-100  bg-gradient-custom px-4 py-2">
         <div className="nav-contents flex gap-14 justify-center items-center">
           <div className="drawer z-50 w-3/12 ">
             <input id="my-drawer" type="checkbox" className="drawer-toggle" />
@@ -43,7 +43,7 @@ const NavSm = () => {
                 aria-label="close sidebar"
                 className="drawer-overlay"
               ></label>
-              <ul className="flex flex-col gap-6 pt-8 w-60 min-h-full bg-[rgb(17,17,34)] text-slate-300 text-lg uppercase">
+              <ul className="flex flex-col gap-6 pt-8 w-60 min-h-full  bg-gradient-custom text-slate-300 text-lg uppercase">
                 {/* content here */}
                 {navOptions}
               </ul>
