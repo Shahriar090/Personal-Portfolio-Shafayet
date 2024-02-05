@@ -29,7 +29,7 @@ const EducationCard = ({ singleData }) => {
           <img
             src={institutionImg}
             alt="Institution Image"
-            className="w-full  bg-white rounded-lg opacity-90 "
+            className="w-full h-full lg:h-[320px]  bg-white rounded-lg opacity-90 "
           />
         </picture>
       </div>

@@ -15,21 +15,17 @@ const RenderExperience = ({ experience }) => {
   } = experience;
 
   return (
-    <div className="card card-side shadow-xl  w-full mx-auto text-slate-100 mt-5 flex flex-col md:flex-row lg:flex-row">
+    <div className="section-wrapper">
       <Link
         className="w-full md:w-3/6 lg:w-2/5 my-auto"
         to={organizationDetails}
       >
         <picture>
-          <img
-            src={organizationImg}
-            alt="Image"
-            className="w-3/4 md:w-3/6 lg:w-3/6  bg-white opacity-90 rounded-lg mx-auto"
-          />
+          <img src={organizationImg} alt="Image" className="org-img" />
         </picture>
       </Link>
 
-      <div className="card-body gap-4 w-full md:w-3/6 lg:w-3/6">
+      <div className="card-container">
         <h1>Designation : {post}</h1>
         <h2>Organization : {organization}</h2>
         <div className="sub-container  flex flex-col gap-3">
@@ -39,25 +35,35 @@ const RenderExperience = ({ experience }) => {
           <h3>End Date : {endDate}</h3>
         </div>
         {/* responsibilities */}
-        <div className="collapse">
-          <input type="checkbox" />
-          <div className="collapse-title text-lg md:text-xl lg:text-xl bg-[#2F4D6B]">
-            See Responsibilities
-          </div>
-          <div className="collapse-content text-lg ">
-            <ul className="px-5">
-              {responsibilities.map((responsibility, index) => (
-                <li className="list-disc font-sans" key={index}>
-                  {responsibility.text}
-                </li>
-              ))}
-            </ul>
+        <div>
+          <button
+            className="btn-outline"
+            onClick={() => document.getElementById("my_modal_1").showModal()}
+          >
+            View Responsibilities
+          </button>
+          <dialog id="my_modal_1" className="modal">
+            <div className="modal-box bg-gradient-custom">
+              <ul className="px-5">
+                {responsibilities.map((responsibility, index) => (
+                  <li className="list-disc font-sans mb-4" key={index}>
+                    {responsibility.text}
+                  </li>
+                ))}
+              </ul>
 
-            <p className="pt-2  ">
-              <span className="font-semibold">Courses</span> :{" "}
-              {courses ? courses : "Not Available"}
-            </p>
-          </div>
+              <p className="pt-2 ">
+                <span className="font-semibold">Courses</span> :{" "}
+                {courses ? courses : "Not Available"}
+              </p>
+              <div className="modal-action">
+                <form method="dialog">
+                  {/* if there is a button in form, it will close the modal */}
+                  <button className="btn-outline">Close</button>
+                </form>
+              </div>
+            </div>
+          </dialog>
         </div>
       </div>
     </div>

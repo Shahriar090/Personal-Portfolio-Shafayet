@@ -1,6 +1,4 @@
 import React from "react";
-import { twMerge } from "tailwind-merge";
-import clsx from "clsx";
 import cn from "../utils/cn";
 const Button = ({ className, variant, children }) => {
   const getVariant = (variant) => {
