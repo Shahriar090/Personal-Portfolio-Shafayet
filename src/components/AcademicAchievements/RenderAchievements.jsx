@@ -9,9 +9,6 @@ const RenderAchievements = ({ singleAchievement }) => {
         <p>{category}</p>
         <h1>{achievement}</h1>
         <h2>Awarded By : {awardedBy ? awardedBy : "N/A"}</h2>
-        {/* <p className="font-sans text-lg">
-          Position : {position ? position : "N/A"}
-        </p> */}
         <p>Year : {year ? year : "N/A"}</p>
       </div>
       <picture className="p-4">

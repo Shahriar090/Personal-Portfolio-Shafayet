@@ -5,8 +5,8 @@ const RenderProject = ({ sinPro }) => {
   const { title, year, descriptions, tools, companyAffiliation } = sinPro;
   return (
     <Container>
-      <div className="card card-side flex-col md:flex-row lg:flex-row  text-slate-100 shadow-md">
-        <div className="card-body p-4 md:p-8 lg:p-8  gap-5">
+      <div className="proj-card-wrapper">
+        <div className="proj-card-body">
           <h1>{title}</h1>
           <h2>About This Project</h2>
           <p className=" pt-3 ">

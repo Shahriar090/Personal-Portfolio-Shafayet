@@ -1,0 +1,8 @@
+@layer base {
+  .proj-card-wrapper {
+    @apply card card-side flex-col md:flex-row lg:flex-row  text-slate-100 shadow-md;
+  }
+  .proj-card-body {
+    @apply card-body p-4 md:p-8 lg:p-8  gap-5;
+  }
+}

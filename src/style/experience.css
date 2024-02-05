@@ -1,5 +1,5 @@
 @layer base {
-  .section-wrapper {
+  .exp-section-wrapper {
     @apply card card-side shadow-xl  w-full mx-auto text-slate-100 mt-5 flex flex-col md:flex-row lg:flex-row;
   }
   .org-img {

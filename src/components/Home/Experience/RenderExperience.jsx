@@ -15,7 +15,7 @@ const RenderExperience = ({ experience }) => {
   } = experience;
 
   return (
-    <div className="section-wrapper">
+    <div className="exp-section-wrapper">
       <Link
         className="w-full md:w-3/6 lg:w-2/5 my-auto"
         to={organizationDetails}
