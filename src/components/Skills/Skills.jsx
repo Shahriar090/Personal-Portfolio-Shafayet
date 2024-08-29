@@ -19,7 +19,7 @@ const Skills = () => {
   }
 
   return (
-    <div className=" text-slate-100">
+    <div className="text-slate-100">
       <Container>
         <section>
           <SectionTitle heading={"Skills"}></SectionTitle>
@@ -27,10 +27,10 @@ const Skills = () => {
 
         <section>
           <div className="category-container">
-            <h2 className="text-xl md:text-2xl lg:text-2xl font-semibold text-center uppercase text-slate-100">
+            <h2 className="text-xl md:text-2xl font-semibold text-center uppercase text-slate-100">
               Programming Languages
             </h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-3">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-3 mt-5">
               {skills["programming Languages"].map((skill) => (
                 <SkillCard key={skill.id} skill={skill}></SkillCard>
               ))}

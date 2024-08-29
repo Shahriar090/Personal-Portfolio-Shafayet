@@ -6,7 +6,7 @@ import "./social-links.css";
 const SocialIcons = () => {
   return (
     <div className="social-links-container">
-      <ul className="flex md:flex-col gap-3 text-xl text-white ">
+      <ul className="flex gap-3 text-xl text-white ">
         {/* Google scholar */}
         <li className="border-2 p-2 rounded-full ">
           <a href="https://scholar.google.com/citations?user=_fLniNkAAAAJ&hl=en&oi=ao&fbclid=IwAR3t5Nvunh2naiYeG9S2JoCICJrLHNFI9wfSh_D7giNjXb06ZG3G9KOKROg">
