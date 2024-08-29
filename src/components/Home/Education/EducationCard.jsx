@@ -14,7 +14,7 @@ const EducationCard = ({ singleData }) => {
   } = singleData;
   return (
     <Link to={viewInstitution}>
-      <div className="card w-full h-full max-w-lg mx-auto shadow-lg hover:shadow-slate-300 text-slate-100">
+      <div className="card w-full h-full max-w-lg mx-auto shadow-lg hover:shadow-slate-300 transition-all duration-300 text-slate-100">
         <div className="card-body gap-4">
           <picture>
             <img
