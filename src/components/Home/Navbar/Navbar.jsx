@@ -29,14 +29,14 @@ const Navbar = () => {
         <div className="nav-contents flex items-center justify-between">
           <div className="logo ">
             <Link to="/">
-              <h2 className="text-2xl font-serif">Shafayet Hossain</h2>
+              <h2 className="text-2xl font-semibold">Shafayet Hossain</h2>
             </Link>
           </div>
 
           <div id="nav-options" className="nav-options ">
             <ul
               id="nav-options-container"
-              className="flex gap-4 text-lg text-white uppercase"
+              className="flex gap-4 text-lg text-white uppercase font-medium"
             >
               {navOptions}
             </ul>

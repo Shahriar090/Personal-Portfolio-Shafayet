@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 
 const RenderExperience = ({ experience }) => {
   const {
+    id,
     post,
     organization,
     organizationImg,
@@ -38,11 +39,11 @@ const RenderExperience = ({ experience }) => {
         <div>
           <button
             className="btn-outline"
-            onClick={() => document.getElementById("my_modal_1").showModal()}
+            onClick={() => document.getElementById(id).showModal()}
           >
             View Responsibilities
           </button>
-          <dialog id="my_modal_1" className="modal">
+          <dialog id={id} className="modal">
             <div className="modal-box bg-gradient-custom">
               <ul className="px-5">
                 {responsibilities.map((responsibility, index) => (

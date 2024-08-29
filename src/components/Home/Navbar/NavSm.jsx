@@ -8,16 +8,16 @@ import "./NavStyles/nav.css";
 const NavSm = () => {
   const navOptions = (
     <>
-      <li className="border-b-2 border-slate-100 p-2 text-center font-sans">
+      <li className="">
         <ActiveLink to="/">Home</ActiveLink>
       </li>
-      <li className="border-b-2 border-slate-100  p-2 text-center font-sans">
+      <li className="">
         <ActiveLink to="/projects">Projects</ActiveLink>
       </li>
-      <li className="border-b-2 border-slate-100  p-2 text-center font-sans">
+      <li className="">
         <ActiveLink to="/achievements">Academic Achievements</ActiveLink>
       </li>
-      <li className="border-b-2 border-slate-100  p-2 text-center font-sans">
+      <li className="">
         <ActiveLink to="/contact">Contact</ActiveLink>
       </li>
     </>
@@ -40,7 +40,7 @@ const NavSm = () => {
                 aria-label="close sidebar"
                 className="drawer-overlay"
               ></label>
-              <ul className="flex flex-col gap-6 pt-8 w-60 min-h-full  bg-gradient-custom text-white text-lg uppercase">
+              <ul className="flex flex-col items-center gap-6 pt-8 w-60 min-h-full  bg-gradient-custom text-white text-lg uppercase">
                 {/* content here */}
                 {navOptions}
               </ul>
@@ -48,7 +48,7 @@ const NavSm = () => {
           </div>
           <div className="logo w-full flex items-center justify-start">
             <Link to="/">
-              <h1 className="text-xl tracking-wide font-semibold font-serif">
+              <h1 className="text-xl tracking-wide font-semibold">
                 {" "}
                 Shafayet Hossain
               </h1>

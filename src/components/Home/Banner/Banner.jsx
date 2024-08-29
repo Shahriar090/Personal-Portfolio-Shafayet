@@ -8,10 +8,10 @@ import Container from "../../../utils/container";
 
 const Banner = () => {
   return (
-    <div className="hero relative w-full h-auto">
+    <div className="hero relative w-full h-auto md:h-[500px]">
       <Container>
         <div className="hero-items w-full flex flex-col lg:flex-row gap-5 md:gap-6 lg:gap-8  items-center justify-center">
-          <div className="hero-image w-full overflow-hidden">
+          <div className="hero-image w-full max-w-[100%] overflow-hidden">
             <picture>
               <img
                 src={bannerImg}
@@ -20,11 +20,12 @@ const Banner = () => {
               />
             </picture>
           </div>
-          <div className="hero-texts w-full flex flex-col gap-5 md:gap-6 lg:gap-8 text-slate-100">
-            <h1 className="custom-heading-style text-2xl lg:text-4xl font-serif tracking-wider">
-              Hello, I am Mohammad Shafayet Hossain
+          <div className="hero-texts w-full flex flex-col gap-5 md:gap-6  text-slate-100">
+            <h1 className="text-2xl lg:text-4xl font-medium tracking-wide">
+              <span> Hello</span>
+              <p>I am Mohammad Shafayet Hossain</p>
             </h1>
-            <p>
+            <p className="font-medium">
               I am an Eramsus Mundus Master’s graduate possessing high
               enthusiasm in renewable energy with strong background in modern
               power systems, power electronics, design and optimization of
