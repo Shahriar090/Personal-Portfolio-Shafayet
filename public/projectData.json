@@ -57,5 +57,25 @@
     ],
     "tools": ["HOMER", "PVSYST", "SKETCHUP", "PVGIS"],
     "companyAffiliation": ["John Cockerill", "University of Lorraine"]
+  },
+  {
+    "id": 5,
+    "title": "DAB Converter Development for EV Charging Application (1 kW) Efficient Power Circuit Design",
+    "year": 2024,
+    "descriptions": [
+      {
+        "text": "Designed a 1 kW Dual Active Bridge (DAB) Converter for EV charging systems with precise voltage ranges (High Voltage Side: 120–150 V DC; Low Voltage Side: 24–48 V DC). The design included high-frequency MOSFET switching for efficient bidirectional power transfer."
+      },
+      {
+        "text": "Advanced Control Techniques: Implemented a state-space model with optimized PI control loops to regulate voltage and current, ensuring stable operation during variable load conditions."
+      },
+      {
+        "text": "Real-Time DSP Control: Deployed control algorithms on a TI DSP C2000 (TMS320F28393) microcontroller for high-precision transient behavior analysis, adaptive control, and seamless power flow during charging and discharging cycles."
+      },
+      {
+        "text": "Application Impact: Enhanced energy efficiency and reliability for 1 kW EV chargers, enabling smooth integration with energy storage and DC microgrids, tailored for compact and scalable EV charging applications."
+      }
+    ],
+    "tools": ["MATLAB", "SIMULINK", "MATLAB-HIL-SIL interface"]
   }
 ]

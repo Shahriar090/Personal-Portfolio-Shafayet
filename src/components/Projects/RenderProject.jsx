@@ -7,18 +7,18 @@ const RenderProject = ({ sinPro }) => {
     <Container>
       <div className="proj-card-wrapper">
         <div className="proj-card-body">
-          <h1>{title}</h1>
-          <h2>About This Project</h2>
+          <h1 className="text-2xl font-medium capitalize">{title}</h1>
+          <h2 className="font-medium">About This Project</h2>
           <p className=" pt-3 ">
             <ul className="px-5">
               {descriptions.map((singleItem, index) => (
-                <li className="list-disc font-sans" key={index}>
+                <li className="list-disc font-sans py-1" key={index}>
                   {singleItem.text}
                 </li>
               ))}
             </ul>
           </p>
-          <h2>Used Tools</h2>
+          <h2 className="font-medium">Used Tools</h2>
           <ul className="px-5 text-lg">
             {tools.map((tool, index) => (
               <li className="list-disc font-sans" key={index}>
